@@ -1,0 +1,18 @@
+#!/bin/sh
+
+for j in English.lproj/*.nib
+do
+	nibfile=`basename "$j"`
+	echo processing $nibfile
+	for i in *.lproj
+	do
+		if [ $i != English.lproj ]
+		then
+			echo Updating $i...
+			nibtool -I "$i/$nibfile" -W "$i/${nibfile}.new" -d "$i/MainMenu.strings" "English.lproj/$nibfile"
+			rm -rf "$i/$nibfile"
+			mv "$i/${nibfile}.new" "$i/$nibfile"
+			echo done.
+		fi
+	done
+done

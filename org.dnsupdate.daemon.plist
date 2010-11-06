@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>org.dnsupdate.daemon</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/sbin/dnsupdate</string>
+        <string>daemon</string>
+    </array>
+    <key>Disabled</key>
+    <false/>
+    <key>OnDemand</key>
+    <false/>
+    <key>StandardErrorPath</key>
+    <string>/var/log/dnsupdate.log</string>
+    <key>StandardOutPath</key>
+    <string>/var/log/dnsupdate.log</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>UserName</key>
+    <string>root</string>
+</dict>
+</plist>

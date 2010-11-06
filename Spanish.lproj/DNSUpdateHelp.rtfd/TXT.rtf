@@ -1,0 +1,323 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf350
+{\fonttbl\f0\froman\fcharset77 Times-Bold;\f1\froman\fcharset77 Times-Roman;\f2\froman\fcharset77 Times-Italic;
+\f3\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\qc
+
+\f0\b\fs100 \cf0 DNSUpdate\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\f1\b0\fs28 \cf0 El programa 
+\f0\b DNSUpdate
+\f1\b0  es un programa cliente para servicios de DNS din\'87mico como DynDNS.org y ZoneEdit.com, espec\'92fico para MacOS X. Usa el framework Cocoa y comienza a funcionar al iniciar el sistema. Viene con un programa gr\'87fico para configurar y monitorear el cliente.\
+\
+
+\f0\b \ul Contenido de este documento de ayuda\
+
+\f2\i\b0 \ulnone 	Configuraci\'97n r\'87pida\
+        	Activaci\'97n del "daemon" DNSUpdate\
+	Monitor del programa DNSUpdate\
+        	Desinstalar el programa DNSUpdate\
+	\'c0C\'97mo configurar la Interfaz?\
+	Errores Comunes\
+	Unixxxxxxxxx\
+	Archivos\
+	Licencia\
+
+\f1\i0 \
+Puede encontrar informaci\'97n m\'87s actualizada, la \'9cltima versi\'97n, notas y preguntas comunes (FAQ) en 
+\f2\i http://www.dnsupdate.org
+\f1\i0 .\
+Tambi\'8en puede contactar al soporte t\'8ecnico en 
+\f2\i support@dnsupdate.org
+\f1\i0 .\
+(Consulte la ventana "Acerca de DNSUpdate")\
+
+\f2\i \
+
+\f0\i0\b \ul Configuraci\'97n R\'87pida
+\f1\b0 \ulnone \
+Antes que nada, debe ser un usuario registrado del servicio de DNS din\'87mico que desea usar. Si no lo es, puede registrarse en su sitio de internet (puede encontrar la direcci\'97n de la p\'87gina de internet de los servicios en el panel "Acerca de DNSUpdate"). Anote el nombre o "login name" (ej.: 
+\f2\i mylogin
+\f1\i0 ) y la contrase\'96a o "password" (ej.: 
+\f2\i mypassword
+\f1\i0 ) que le proporcione el servicio de su elecci\'97n.\
+\
+Luego, tiene que registrar al menos un "host" para el usuario registrado (ej.: 
+\f2\i myhost.dnsalias.net
+\f1\i0 ).\
+\
+Abra el programa 
+\f0\b DNSUpdate
+\f1\b0 . \'c1El programa 
+\f0\b DNSUpdate
+\f1\b0  
+\f0\b tiene
+\f1\b0  que ser ejecutado como un usuario con 
+\f0\b privilegios de Administrador!
+\f1\b0 \
+De ser necesario, el programa instalar\'87 el "daemon" y el "Item de Arranque" en sus respectivos lugares (se requiere contrase\'96a de administrador). La parte m\'87s importante del programa 
+\f0\b DNSUpdate
+\f1\b0  es el "daemon" el cual es activado autom\'87ticamente al iniciar el sistema, y por lo tanto 
+\f0\b no es indispensable que est\'8e funcionando el programa
+\f1\b0  para que el DNS sea actualizado, el programa solo se usa para la instalaci\'97n, configuraci\'97n y con fines de monitoreo.\
+\
+Abra la ventana de Usuarios (Archivo>Editar Usuarios o teclas Comando-U).\
+\
+Agregue un usuario (Agregar Usuario) con su nombre de usuario o "login" y contrase\'96a o "password" (
+\f2\i mylogin
+\f1\i0  y 
+\f2\i mypassword
+\f1\i0 ). El usuario aparecer\'87 en la ventana de usuarios en formato 
+\f2\i mylogin
+\f1\i0 @
+\f2\i theservice mylogin
+\f1\i0 @
+\f2\i theservice
+\f1\i0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 1.jpg \width8260 \height6220
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Haga click en el usuario y agregue un "host" (Agregar Host) con el nombre del "host" (
+\f2\i myhost.dnsalias.net
+\f1\i0 ). Es necesario que 
+\f0\b el nombre del "host" est\'8e escrito completamente
+\f1\b0 , incluyendo el nombre del dominio. Seleccione la Interfaz a usar para este "host" (consulte la secci\'97n: 
+\f2\i \'c0C\'97mo configurar la Interfaz?
+\f1\i0 ) y el tipo de "host". Por ejemplo, si el servicio que usa es DynDNS.org, debe seleccionar el tipo de "host" de las opciones ("dyndns" para DNS Din\'87mico, "statdns" para DNS Est\'87tico o "personalizado" para DNS Personalizado) y las opciones "Wildcard" y "Mail Exchanger" si planea usarlas.\
+El nuevo "host" aparece ahora bajo la columna "Usuario" en la ventana de Usuarios.\
+Es posible registrar varios "hosts" en su servicio de DNS, si \'8este los acepta. El programa 
+\f0\b DNSUpdate
+\f1\b0  soporta m\'9cltiples "hosts" por usuario. El programa 
+\f0\b DNSUpdate
+\f1\b0  tambi\'8en soporta m\'9cltiples usuarios.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 2.jpg \width8240 \height6200
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 Ahora puede activar el usuario "
+\f2\i mylogin"
+\f1\i0  oprimiendo el bot\'97n "Activo". Normalmente, no hay mas que hacer. El programa 
+\f0\b DNSUpdate
+\f1\b0  ha sido configurado y ya est\'87 en funcionamiento. Puede abandonar el programa 
+\f0\b DNSUpdate
+\f1\b0  o usarlo para monitorear la actividad del "daemon" (consulte la secci\'97n: 
+\f2\i Monitor del programa DNSUpdate
+\f1\i0 ).\
+En la ventana de Usuarios, si el usuario o el "host" se llegaran a desconectar de manera autom\'87tica, es posible que exista alg\'9cn error en la configuraci\'97n. Consulte la secci\'97n 
+\f2\i Errores Comunes
+\f1\i0 . El estatus correcto para usuarios y "hosts" es "Ok".\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Activaci\'97n del "daemon" DNSUpdate
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone Puede configurar el "daemon" para que sea activado al iniciar el sistema, desactivado al iniciar el sistema, para que conserve su estado entre apagado y encendido del sistema (reboot) o para ser activado solo al iniciar el programa 
+\f0\b DNSUpdate
+\f1\b0 . Abra la ventana de Preferencias  (DNSUpdate->Preferencias...) y seleccione el m\'8etodo de activaci\'97n preferido.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Monitor del programa DNSUpdate
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone El "daemon" del programa 
+\f0\b DNSUpdate
+\f1\b0  no requiere del programa para estar funcionando. Consultar\'87 la direcci\'97n IP cada minuto (cada 15 minutos si la Interfaz es Externa/Externa (omitiendo el Proxy)) y actualizar\'87 la base de datos del servicio de DNS solo si es necesario. Sin embargo, el programa 
+\f0\b DNSUpdate
+\f1\b0  puede ser utilizado para monitorear la actividad del "daemon". Se recomienda monitorear la actividad del "daemon" solo durante un (peque\'96o) per\'92odo de tiempo para verificar que la configuraci\'97n sea correcta.\
+\
+Cierre la ventana de Usuarios y abra la ventana de Monitor (Ventana->Abrir Ventana de Monitor o teclas Comando-O).\
+\
+En esta ventana, puede verificar que su direcci\'97n IP est\'8e registrada, la \'9cltima ves que fue registrada y eventualmente, si algo sale mal, la columna "Estatus" indicar\'87 el error (consulte la secci\'97n: 
+\f2\i Errores Comunes
+\f1\i0 ). Si el Usuario est\'87 inactivo, abra la ventana de Usuarios para verificar el estatus del usuario, y eventualmente reactivarlo.\
+\
+Puede 
+\f0\b desactivar
+\f1\b0  un "host" de manera temporal (el "daemon" no llevar\'87 a cabo la actualizaci\'97n de la direcci\'97n IP) o 
+\f0\b reactivarlo
+\f1\b0  (si hubiera sido desactivado previamente por un error o a prop\'97sito. \'c1Asegurese de corregir el error antes de reactivar nuevamente el "host"!). Tambi\'8en puede activar o desactivar los "hosts" en la ventana de Usuarios.\
+\
+Tambi\'8en puede 
+\f0\b detener
+\f1\b0  o 
+\f0\b reanudar
+\f1\b0  la operaci\'97n del "daemon" oprimiendo el bot\'97n "Detener/Reanudar daemon". Cuando est\'8e detenido, el "daemon" no intentar\'87 verificar la Interfaz ni registrar o actualizar su direcci\'97n IP.\
+\
+La informaci\'97n de las columnas "Usuario" y "Ultima Actualizaci\'97n" se adapta al ancho de las columnas.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 4.jpg \width12600 \height3020
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 3.jpg \width15320 \height3020
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Si es un usuario avanzado (o si desea enviar los contenidos al autor de este programa), tambi\'8en puede mostrar los contenidos de la Bit\'87cora del "daemon" (Herramientas->Abrir Bit\'87cora o teclas Comando-L).\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Desinstalar el programa DNSUpdate
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 Para desinstalar el programa DNSUpdate (incluyendo el "daemon" y el Item de Arranque), use la opci\'97n "Desinstalar DNSUpdate" de el men\'9c "Herramientas". Deber\'87 proporcionar una contrase\'96a de Administrador. El programa terminar\'87 su operaci\'97n despu\'8es de este proceso.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 \'c0C\'97mo configurar la Inferfaz?
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 Deber\'87 configurar la Interfaz del "Host" dependiendo la manera en que est\'8e conectado al Internet: \
+\
+- B\'87sicamente, la "Interfaz por Omisi\'97n" seleccionar\'87 la Interfaz activa definida en las Preferencias de Red (si \'8esta Interfaz llega a cambiar, el "daemon" DNSUpdate se dar\'87 cuenta y cambiar\'87 de manera acorde).\
+- Con su modem interno (usando una l\'92nea telef\'97nica est\'87ndar): use la opci\'97n "Internal Modem"\
+- Con un cable modem conectado a su tarjeta Ethernet integrada o si est\'87 conectado directamente al Internet: use la opci\'97n "Built-in Ethernet"\
+- Con una tarjeta de ethernet adicional: use "Secondary Ethernet"\
+- V\'92a DSL/ADSL usando el protocolo PPPoE: use "Modem ADSL (PPPoE)"\
+- Si est\'87 usando un router: use "External"\
+- Si est\'87 usando un router y un proxy: use "External (bypassing Proxy)"\
+- Normalmente, "External (bypassing Proxy)" funcionar\'87 la mayor parte de las veces. Este es su \'9cltimo recurso. Si nada funciona, su tipo de conexi\'97n no est\'87 contemplada, favor de contactar al autor de este programa.\
+\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Errores Comunes
+\f1\b0 \ulnone \
+Si hay un error al actualizar el "host", el estatus del usuario/host muestra el problema.\
+Los principales errores son:\
+\
+- 
+\f2\i Usuario o Contrase\'96a err\'97neos
+\f1\i0 : el login o password est\'87n equivocados;\
+- 
+\f2\i No existe el host
+\f1\i0 : el "host" indicado no est\'87 registrado en el servicio DynDNS.org;\
+- 
+\f2\i No de su propiedad/No pertenece a este Usuario
+\f1\i0 : el "host" no es de su propiedad;\
+- 
+\f2\i Abuso/Bloqueado por Abuso
+\f1\i0 : su "host" se encuentra bloqueado. Contacte al soporte del servicio DynDNS;\
+- 
+\f2\i Nombre de dominio err\'97neo
+\f1\i0 : debe escribir el nombre del "host" completo (ej.: "test.dyndns.org" y no solo "test")\
+- El resto son errores cr\'92ticos principalmente (ya sea del servicio DynDNS.org o del programa 
+\f0\b DNSUpdate
+\f1\b0 ): \
+*  Error cr\'92tico del servicio DynDNS (Contacte al soporte del servicio DynDNS.org o espere un tiempo): 
+\f2\i El servicio DynDNS no funciona
+\f1\i0 , o 
+\f2\i error en el DNS
+\f1\i0 .\
+*  Error no cr\'92tico del servicio DynDNS: 
+\f2\i No hay respuesta del servicio
+\f1\i0  (No contesta o "Time out"... tal ves el "host" est\'87 temporalmente inaccesible)\
+*  Los dem\'87s son errores cr\'92ticos del programa DNSUpdate. Contacte al autor del programa para obtener soporte (
+\f2\i support@dnsupdate.org)
+\f1\i0 .\
+\
+A veces, tal ves, su 
+\f0\b Interfaz estar\'87 inactiva
+\f1\b0 . O hubo alg\'9cn problema con su Interfaz. Tal ves seleccion\'97 la Interfaz err\'97nea (interna) o, si la Interfaz es externa, el "daemon" tubo problemas al contactar el servidor externo para obtener la direcci\'97n IP (tal ves de manera temporal).\
+La Interfaz estar\'87 inactiva si se desconecta del Internet.\
+El "daemon" intentar\'87 de manera autom\'87tica y reactivar\'87 la Interfaz cuando ya no exista ning\'9cn problema.\
+\
+
+\f0\b \ul Unixxxxxxxxx 
+\f1\b0 \ulnone \
+El sistema operativo MacOS X es tambi\'8en un sistema operativo Unix. Trat\'8e de hacer el uso del programa DNSUpdate lo m\'87s f\'87cil posible. Tambi\'8en trat\'8e de hacer del programa DNSUpdate un programa de unix. Para los interesados, se pueden hacer cosas con el programa 
+\f0\b DNSUpdate
+\f1\b0  a trav\'8es de la terminal de comandos.\
+El "daemon" es, de hecho, un programa de Unix que se instala en 
+\f2\i /usr/local/sbin
+\f1\i0  y se llama\'c9 dnsupdate. Se puede usar dicho programa para controlar el funcionamiento del "daemon". Similar al programa 
+\f0\b DNSUpdate
+\f1\b0 , debe ejecutarse con privilegios de Administrador para que funcione correctamente.\
+Esto es lo que se puede hacer:\
+
+\f2\i dnsupdate
+\f1\i0 : sin par\'87metros, muestra una lista de ayuda.\
+
+\f2\i dnsupdate pause
+\f1\i0 : detiene la operaci\'97n del "daemon".\
+
+\f2\i dnsupdate start
+\f1\i0 : inicia o reinicia la operaci\'97n del "daemon".\
+
+\f2\i dnsupdate quit
+\f1\i0 : termina la ejecuci\'97n del "daemon".\
+
+\f2\i dnsupdate daemon
+\f1\i0 : inicia el programa en modo "daemon" (\'c1no utilice esta opci\'97n al menos que sepa lo que est\'87 haciendo!).\
+
+\f2\i dnsupdate magic
+\f1\i0 : muestra la versi\'97n del "daemon" (solo es usado por el programa 
+\f0\b DNSUpdate
+\f1\b0  con fines de actualizaci\'97n)\
+Cuando el "daemon" es puesto en marcha, usa dos archivos importantes: 
+\f2\i /var/log/dnsupdate.log
+\f1\i0  que lleva una bit\'87cora de la actividad del "daemon" y 
+\f2\i /var/run/DNSUpdate_key
+\f1\i0  el cual contiene la llave para conectarse al "daemon". Solo los usuarios con privilegios de Administrador pueden consultar los contenidos de este \'9cltimo archivo. Esto es importante para la seguridad del sistema.\
+\
+
+\f0\b \ul Archivos
+\f1\b0 \ulnone \
+El programa 
+\f0\b DNSUpdate
+\f1\b0  instala importantes archivos distintos en su disco duro:\
+
+\f2\i /Library/LaunchDaemons/org.dnsupdate.daemon.plist
+\f1\i0 : el Item de Arranque que es usado para iniciar la operaci\'97n del "daemon" al iniciar el sistema.\
+
+\f2\i /Library/Preferences/DNSUpdate
+\f1\i0 : los archivos de configuraci\'97n de los usuarios.\
+
+\f2\i /usr/local/sbin/dnsupdate
+\f1\i0 : el mism\'92simo "daemon".\
+/var/log/dnsupdate.log: la bit\'87cora del "daemon".\
+
+\f2\i /var/run/DNSUpdate_key
+\f1\i0 : la llave para conectarse al "daemon".\
+
+\f2\i DNSUpdate
+\f1\i0 (.
+\f2\i app
+\f1\i0 ): el programa.\
+\
+
+\f0\b \ul Licencia
+\f1\b0 \ulnone \
+El programa 
+\f0\b DNSUpdate
+\f1\b0  es gratuito y c\'97digo abierto "open source". Aunque el programa 
+\f0\b DNSUpdate
+\f1\b0  no se rige bajo la licencia de tipo "GPL", realmente agradecer\'92a ver cualquier modificaci\'97n hecha a mi c\'97digo, y cualquier uso de \'8este c\'97digo para cualquier tipo de proyecto requiere de mi autorizaci\'97n.\
+\
+
+\f0\b DNSUpdate es 
+\f1\b0 \'a9 2000-2001 por Julien Jalon (
+\f2\i jalon@julien-jalon.org
+\f1\i0 )}

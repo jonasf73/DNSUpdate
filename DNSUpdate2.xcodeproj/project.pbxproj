@@ -1,0 +1,1088 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F2E55BA3087B371200BE3C85 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F208FF1D09F23E3400C8C3C4 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				F2E55C15087B371200BE3C85 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F208FF3009F2405900C8C3C4 /* DUMachBootstrapServer.h in Headers */ = {isa = PBXBuildFile; fileRef = F208FF2E09F2405900C8C3C4 /* DUMachBootstrapServer.h */; };
+		F208FF3109F2405900C8C3C4 /* DUMachBootstrapServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F208FF2F09F2405900C8C3C4 /* DUMachBootstrapServer.m */; };
+		F2E55BA7087B371200BE3C85 /* DUInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F5C2680075BCAC7F000001 /* DUInterface.h */; settings = {ATTRIBUTES = (); }; };
+		F2E55BA8087B371200BE3C85 /* DUInternalInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F5C2690075BDB37F000001 /* DUInternalInterface.h */; };
+		F2E55BA9087B371200BE3C85 /* HTTPLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEC1CF0075E9E57F000001 /* HTTPLoader.h */; };
+		F2E55BAA087B371200BE3C85 /* DUServiceUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEC1DD0076062B7F000001 /* DUServiceUpdater.h */; };
+		F2E55BAB087B371200BE3C85 /* DUDynDNSUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEC1E1007606917F000001 /* DUDynDNSUpdater.h */; };
+		F2E55BAC087B371200BE3C85 /* DUExternalInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEC1E500760E0A7F000001 /* DUExternalInterface.h */; };
+		F2E55BAD087B371200BE3C85 /* DUUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 109A862400773E2A7F000001 /* DUUser.h */; };
+		F2E55BAE087B371200BE3C85 /* DUHost.h in Headers */ = {isa = PBXBuildFile; fileRef = 195EA56A007B77017F000001 /* DUHost.h */; };
+		F2E55BAF087B371200BE3C85 /* DULibraryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8A3007F470B7F000001 /* DULibraryManager.h */; };
+		F2E55BB0087B371200BE3C85 /* DUDaemon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8A70080890B7F000001 /* DUDaemon.h */; };
+		F2E55BB1087B371200BE3C85 /* DUGuardian.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8AC00809E0D7F000001 /* DUGuardian.h */; };
+		F2E55BB2087B371200BE3C85 /* DUProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8AD00809E0D7F000001 /* DUProxy.h */; };
+		F2E55BB3087B371200BE3C85 /* DUProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8B20080A4877F000001 /* DUProtocols.h */; };
+		F2E55BB4087B371200BE3C85 /* DUClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8B50080AAC17F000001 /* DUClient.h */; };
+		F2E55BB5087B371200BE3C85 /* DUCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 22ED734C008CDC037F000001 /* DUCommon.h */; };
+		F2E55BB6087B371200BE3C85 /* DUDefaultInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F56570BF01B7801B018453F3 /* DUDefaultInterface.h */; };
+		F2E55BB7087B371200BE3C85 /* DUGenericHTTPUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = F50593020219537301844B0F /* DUGenericHTTPUpdater.h */; };
+		F2E55BB8087B371200BE3C85 /* DUZoneEditUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = F5059305021964A301844B0F /* DUZoneEditUpdater.h */; };
+		F2E55BB9087B371200BE3C85 /* DUFakeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F545407E025604370100000A /* DUFakeInterface.h */; };
+		F2E55BBA087B371200BE3C85 /* DUEasyDNSUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = F565F27D02EB5ACB0100000A /* DUEasyDNSUpdater.h */; };
+		F2E55BBC087B371200BE3C85 /* DUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5C2670075BCAC7F000001 /* DUInterface.m */; };
+		F2E55BBD087B371200BE3C85 /* DUInternalInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5C26A0075BDB37F000001 /* DUInternalInterface.m */; };
+		F2E55BBE087B371200BE3C85 /* DNSUpdate_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5C2770075C3A67F000001 /* DNSUpdate_main.m */; };
+		F2E55BBF087B371200BE3C85 /* HTTPLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC1CE0075E9E57F000001 /* HTTPLoader.m */; };
+		F2E55BC0087B371200BE3C85 /* DUServiceUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC1DC0076062B7F000001 /* DUServiceUpdater.m */; };
+		F2E55BC1087B371200BE3C85 /* DUDynDNSUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC1E0007606917F000001 /* DUDynDNSUpdater.m */; };
+		F2E55BC2087B371200BE3C85 /* DUExternalInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC1E400760E0A7F000001 /* DUExternalInterface.m */; };
+		F2E55BC3087B371200BE3C85 /* DUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 109A862300773E2A7F000001 /* DUUser.m */; };
+		F2E55BC4087B371200BE3C85 /* DUHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 195EA569007B77017F000001 /* DUHost.m */; };
+		F2E55BC5087B371200BE3C85 /* DULibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8A2007F470B7F000001 /* DULibraryManager.m */; };
+		F2E55BC6087B371200BE3C85 /* DUDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8A60080890B7F000001 /* DUDaemon.m */; };
+		F2E55BC7087B371200BE3C85 /* DUGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8AA00809E0D7F000001 /* DUGuardian.m */; };
+		F2E55BC8087B371200BE3C85 /* DUProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8AB00809E0D7F000001 /* DUProxy.m */; };
+		F2E55BC9087B371200BE3C85 /* DUClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8B40080AAC17F000001 /* DUClient.m */; };
+		F2E55BCA087B371200BE3C85 /* DUDefaultInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F56570BE01B7801B018453F3 /* DUDefaultInterface.m */; };
+		F2E55BCB087B371200BE3C85 /* DUGenericHTTPUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = F50593010219537301844B0F /* DUGenericHTTPUpdater.m */; };
+		F2E55BCC087B371200BE3C85 /* DUZoneEditUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = F5059306021964A301844B0F /* DUZoneEditUpdater.m */; };
+		F2E55BCD087B371200BE3C85 /* DUFakeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F545407D025604370100000A /* DUFakeInterface.m */; };
+		F2E55BCE087B371200BE3C85 /* DUEasyDNSUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = F565F27E02EB5ACB0100000A /* DUEasyDNSUpdater.m */; };
+		F2E55BD0087B371200BE3C85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC1CA0075E8F37F000001 /* Foundation.framework */; };
+		F2E55BD1087B371200BE3C85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56570BC01B77DC3018453F3 /* SystemConfiguration.framework */; };
+		F2E55BD2087B371200BE3C85 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5059310021C42DC01844B0F /* CoreFoundation.framework */; };
+		F2E55BD3087B371200BE3C85 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5059311021C42DC01844B0F /* CoreServices.framework */; };
+		F2E55BDA087B371200BE3C85 /* DUAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8D500810B8D7F000001 /* DUAppController.h */; };
+		F2E55BDB087B371200BE3C85 /* DUClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8B50080AAC17F000001 /* DUClient.h */; };
+		F2E55BDC087B371200BE3C85 /* DUUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 109A862400773E2A7F000001 /* DUUser.h */; };
+		F2E55BDD087B371200BE3C85 /* DUHost.h in Headers */ = {isa = PBXBuildFile; fileRef = 195EA56A007B77017F000001 /* DUHost.h */; };
+		F2E55BDE087B371200BE3C85 /* DUProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8B20080A4877F000001 /* DUProtocols.h */; };
+		F2E55BDF087B371200BE3C85 /* DUInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F5C2680075BCAC7F000001 /* DUInterface.h */; };
+		F2E55BE0087B371200BE3C85 /* DUServiceUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEC1DD0076062B7F000001 /* DUServiceUpdater.h */; };
+		F2E55BE1087B371200BE3C85 /* DUMonitorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8E60081B0FB7F000001 /* DUMonitorController.h */; };
+		F2E55BE2087B371200BE3C85 /* DUUsersController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8F40087400A7F000001 /* DUUsersController.h */; };
+		F2E55BE3087B371200BE3C85 /* DULibraryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D8A3007F470B7F000001 /* DULibraryManager.h */; };
+		F2E55BE4087B371200BE3C85 /* DUCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 22ED734C008CDC037F000001 /* DUCommon.h */; };
+		F2E55BE5087B371200BE3C85 /* DUDynDNSUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEC1E1007606917F000001 /* DUDynDNSUpdater.h */; };
+		F2E55BE6087B371200BE3C85 /* DUServiceInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F5721C3B021814B501844B0F /* DUServiceInterface.h */; };
+		F2E55BE7087B371200BE3C85 /* DUDynDNSInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F5721C3F0218194C01844B0F /* DUDynDNSInterface.h */; };
+		F2E55BE8087B371200BE3C85 /* DUZoneEditInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F505930C02196BDB01844B0F /* DUZoneEditInterface.h */; };
+		F2E55BE9087B371200BE3C85 /* DUEasyDNSInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F565F28102EB61830100000A /* DUEasyDNSInterface.h */; };
+		F2E55BEB087B371200BE3C85 /* DNSUpdateIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 016F8054007D18217F000001 /* DNSUpdateIcon.icns */; };
+		F2E55BED087B371200BE3C85 /* DNSUpdateHelp.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = F58B5F2D0148EB2701000001 /* DNSUpdateHelp.rtfd */; };
+		F2E55BEE087B371200BE3C85 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = F53F9B50016BAEC601845096 /* Credits.html */; };
+		F2E55BEF087B371200BE3C85 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5C6013D018410AB01845059 /* Localizable.strings */; };
+		F2E55BF0087B371200BE3C85 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B6B019CA77701845059 /* MainMenu.nib */; };
+		F2E55BF1087B371200BE3C85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5F70B73019CA8C601845059 /* InfoPlist.strings */; };
+		F2E55BF2087B371200BE3C85 /* MainMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = F56570D501B7DD1D018453F3 /* MainMenu.strings */; };
+		F2E55BF3087B371200BE3C85 /* duUninstallDaemon.py in Resources */ = {isa = PBXBuildFile; fileRef = F574253E01B9649D018453F3 /* duUninstallDaemon.py */; };
+		F2E55BF4087B371200BE3C85 /* duInstallDaemon.py in Resources */ = {isa = PBXBuildFile; fileRef = F574253C01B9649D018453F3 /* duInstallDaemon.py */; };
+		F2E55BF5087B371200BE3C85 /* startDaemon.py in Resources */ = {isa = PBXBuildFile; fileRef = F574253D01B9649D018453F3 /* startDaemon.py */; };
+		F2E55BF6087B371200BE3C85 /* Add User.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5CB67240215FCAD01844B0F /* Add User.tiff */; };
+		F2E55BF7087B371200BE3C85 /* Add Host.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5CB67260215FDCD01844B0F /* Add Host.tiff */; };
+		F2E55BF8087B371200BE3C85 /* Remove.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5CB67280215FEDD01844B0F /* Remove.tiff */; };
+		F2E55BF9087B371200BE3C85 /* Edit.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5CB672A0216007101844B0F /* Edit.tiff */; };
+		F2E55BFA087B371200BE3C85 /* DynDNS.org.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5721C480218215C01844B0F /* DynDNS.org.nib */; };
+		F2E55BFB087B371200BE3C85 /* ZoneEdit.com.nib in Resources */ = {isa = PBXBuildFile; fileRef = F505930902196B9801844B0F /* ZoneEdit.com.nib */; };
+		F2E55BFC087B371200BE3C85 /* EasyDNS.com.nib in Resources */ = {isa = PBXBuildFile; fileRef = F565F28502EB61B30100000A /* EasyDNS.com.nib */; };
+		F2E55BFE087B371200BE3C85 /* GUIMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8D00081022B7F000001 /* GUIMain.m */; };
+		F2E55BFF087B371200BE3C85 /* DUAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8D600810B8D7F000001 /* DUAppController.m */; };
+		F2E55C00087B371200BE3C85 /* DUClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8B40080AAC17F000001 /* DUClient.m */; };
+		F2E55C01087B371200BE3C85 /* DUInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5C2670075BCAC7F000001 /* DUInterface.m */; };
+		F2E55C02087B371200BE3C85 /* DUHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 195EA569007B77017F000001 /* DUHost.m */; };
+		F2E55C03087B371200BE3C85 /* DUServiceUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC1DC0076062B7F000001 /* DUServiceUpdater.m */; };
+		F2E55C04087B371200BE3C85 /* DUMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8E70081B0FB7F000001 /* DUMonitorController.m */; };
+		F2E55C05087B371200BE3C85 /* DUUsersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8F30087400A7F000001 /* DUUsersController.m */; };
+		F2E55C06087B371200BE3C85 /* DUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 109A862300773E2A7F000001 /* DUUser.m */; };
+		F2E55C07087B371200BE3C85 /* DULibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387D8A2007F470B7F000001 /* DULibraryManager.m */; };
+		F2E55C08087B371200BE3C85 /* DUServiceInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F5721C3C021814B501844B0F /* DUServiceInterface.m */; };
+		F2E55C09087B371200BE3C85 /* DUDynDNSInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F5721C400218194C01844B0F /* DUDynDNSInterface.m */; };
+		F2E55C0A087B371200BE3C85 /* DUZoneEditInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F505930D02196BDB01844B0F /* DUZoneEditInterface.m */; };
+		F2E55C0B087B371200BE3C85 /* DUEasyDNSInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F565F28202EB61830100000A /* DUEasyDNSInterface.m */; };
+		F2E55C0D087B371200BE3C85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F5C2650075BC767F000001 /* Cocoa.framework */; };
+		F2E55C0E087B371200BE3C85 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ED7354008F73D17F000001 /* Security.framework */; };
+		F2E55C18087B371200BE3C85 /* dnsupdate in Resources */ = {isa = PBXBuildFile; fileRef = F2E55BD5087B371200BE3C85 /* dnsupdate */; };
+		F2E70A5809F26CE00025A912 /* org.dnsupdate.daemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2E70A5109F268340025A912 /* org.dnsupdate.daemon.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2E55C14087B371200BE3C85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02F5C25F0075BBDA7F000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E55BD7087B371200BE3C85;
+			remoteInfo = "DNSUpdate GUI (Upgraded)";
+		};
+		F2E55C16087B371200BE3C85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02F5C25F0075BBDA7F000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E55BA5087B371200BE3C85;
+			remoteInfo = "dnsupdate (Upgraded)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016F8053007D18217F000001 /* DNSUpdate_icon */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = DNSUpdate_icon; sourceTree = "<group>"; };
+		016F8054007D18217F000001 /* DNSUpdateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DNSUpdateIcon.icns; sourceTree = "<group>"; };
+		016F8055007D18217F000001 /* DNSUpdateIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DNSUpdateIcon.tif; sourceTree = "<group>"; };
+		016F8057007D194C7F000001 /* DNSUpdateIcon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = DNSUpdateIcon.psd; sourceTree = "<group>"; };
+		02F5C2650075BC767F000001 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		02F5C2660075BC767F000001 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		02F5C2670075BCAC7F000001 /* DUInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUInterface.m; sourceTree = "<group>"; };
+		02F5C2680075BCAC7F000001 /* DUInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUInterface.h; sourceTree = "<group>"; };
+		02F5C2690075BDB37F000001 /* DUInternalInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUInternalInterface.h; sourceTree = "<group>"; };
+		02F5C26A0075BDB37F000001 /* DUInternalInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUInternalInterface.m; sourceTree = "<group>"; };
+		02F5C2770075C3A67F000001 /* DNSUpdate_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DNSUpdate_main.m; sourceTree = "<group>"; };
+		0387D8A2007F470B7F000001 /* DULibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DULibraryManager.m; sourceTree = "<group>"; };
+		0387D8A3007F470B7F000001 /* DULibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DULibraryManager.h; sourceTree = "<group>"; };
+		0387D8A60080890B7F000001 /* DUDaemon.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUDaemon.m; sourceTree = "<group>"; };
+		0387D8A70080890B7F000001 /* DUDaemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUDaemon.h; sourceTree = "<group>"; };
+		0387D8AA00809E0D7F000001 /* DUGuardian.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUGuardian.m; sourceTree = "<group>"; };
+		0387D8AB00809E0D7F000001 /* DUProxy.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUProxy.m; sourceTree = "<group>"; };
+		0387D8AC00809E0D7F000001 /* DUGuardian.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUGuardian.h; sourceTree = "<group>"; };
+		0387D8AD00809E0D7F000001 /* DUProxy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUProxy.h; sourceTree = "<group>"; };
+		0387D8B20080A4877F000001 /* DUProtocols.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUProtocols.h; sourceTree = "<group>"; };
+		0387D8B40080AAC17F000001 /* DUClient.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUClient.m; sourceTree = "<group>"; };
+		0387D8B50080AAC17F000001 /* DUClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUClient.h; sourceTree = "<group>"; };
+		0387D8D00081022B7F000001 /* GUIMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GUIMain.m; sourceTree = "<group>"; };
+		0387D8D500810B8D7F000001 /* DUAppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUAppController.h; sourceTree = "<group>"; };
+		0387D8D600810B8D7F000001 /* DUAppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUAppController.m; sourceTree = "<group>"; };
+		0387D8E60081B0FB7F000001 /* DUMonitorController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUMonitorController.h; sourceTree = "<group>"; };
+		0387D8E70081B0FB7F000001 /* DUMonitorController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUMonitorController.m; sourceTree = "<group>"; };
+		0387D8F30087400A7F000001 /* DUUsersController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUUsersController.m; sourceTree = "<group>"; };
+		0387D8F40087400A7F000001 /* DUUsersController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUUsersController.h; sourceTree = "<group>"; };
+		05CEC1CA0075E8F37F000001 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		05CEC1CE0075E9E57F000001 /* HTTPLoader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = HTTPLoader.m; sourceTree = "<group>"; };
+		05CEC1CF0075E9E57F000001 /* HTTPLoader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = HTTPLoader.h; sourceTree = "<group>"; };
+		05CEC1DC0076062B7F000001 /* DUServiceUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUServiceUpdater.m; sourceTree = "<group>"; };
+		05CEC1DD0076062B7F000001 /* DUServiceUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUServiceUpdater.h; sourceTree = "<group>"; };
+		05CEC1E0007606917F000001 /* DUDynDNSUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUDynDNSUpdater.m; sourceTree = "<group>"; };
+		05CEC1E1007606917F000001 /* DUDynDNSUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUDynDNSUpdater.h; sourceTree = "<group>"; };
+		05CEC1E400760E0A7F000001 /* DUExternalInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUExternalInterface.m; sourceTree = "<group>"; };
+		05CEC1E500760E0A7F000001 /* DUExternalInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUExternalInterface.h; sourceTree = "<group>"; };
+		109A862300773E2A7F000001 /* DUUser.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUUser.m; sourceTree = "<group>"; };
+		109A862400773E2A7F000001 /* DUUser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUUser.h; sourceTree = "<group>"; };
+		195EA569007B77017F000001 /* DUHost.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUHost.m; sourceTree = "<group>"; };
+		195EA56A007B77017F000001 /* DUHost.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUHost.h; sourceTree = "<group>"; };
+		22ED734C008CDC037F000001 /* DUCommon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUCommon.h; sourceTree = "<group>"; };
+		22ED7354008F73D17F000001 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		F208FF2E09F2405900C8C3C4 /* DUMachBootstrapServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUMachBootstrapServer.h; sourceTree = "<group>"; };
+		F208FF2F09F2405900C8C3C4 /* DUMachBootstrapServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUMachBootstrapServer.m; sourceTree = "<group>"; };
+		F2E55BD5087B371200BE3C85 /* dnsupdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dnsupdate; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E55C11087B371200BE3C85 /* Info-DNSUpdate_GUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-DNSUpdate_GUI.plist"; sourceTree = "<group>"; };
+		F2E55C12087B371200BE3C85 /* DNSUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNSUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E70A5109F268340025A912 /* org.dnsupdate.daemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = org.dnsupdate.daemon.plist; sourceTree = "<group>"; };
+		F50593010219537301844B0F /* DUGenericHTTPUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUGenericHTTPUpdater.m; sourceTree = "<group>"; };
+		F50593020219537301844B0F /* DUGenericHTTPUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUGenericHTTPUpdater.h; sourceTree = "<group>"; };
+		F5059305021964A301844B0F /* DUZoneEditUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUZoneEditUpdater.h; sourceTree = "<group>"; };
+		F5059306021964A301844B0F /* DUZoneEditUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUZoneEditUpdater.m; sourceTree = "<group>"; };
+		F505930A02196B9801844B0F /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ZoneEdit.com.nib; sourceTree = "<group>"; };
+		F505930C02196BDB01844B0F /* DUZoneEditInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUZoneEditInterface.h; sourceTree = "<group>"; };
+		F505930D02196BDB01844B0F /* DUZoneEditInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUZoneEditInterface.m; sourceTree = "<group>"; };
+		F5059310021C42DC01844B0F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		F5059311021C42DC01844B0F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		F5059314021D804401844B0F /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = Spanish; path = Spanish.lproj/DNSUpdateHelp.rtfd; sourceTree = "<group>"; };
+		F5059315021D804401844B0F /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5059316021D80B201844B0F /* Spanish */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5059317021D80B201844B0F /* Spanish */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = Spanish; path = Spanish.lproj/Credits.html; sourceTree = "<group>"; };
+		F5059318021D80B201844B0F /* Spanish */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		F5059319021D80B201844B0F /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/DynDNS.org.nib; sourceTree = "<group>"; };
+		F505931A021D80B201844B0F /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ZoneEdit.com.nib; sourceTree = "<group>"; };
+		F505931B021D80B201844B0F /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ZoneEdit.com.nib; sourceTree = "<group>"; };
+		F505931C021D80B201844B0F /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/ZoneEdit.com.nib; sourceTree = "<group>"; };
+		F505931E021D811401844B0F /* Spanish */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F53F9B51016BAEC601845096 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = English; path = English.lproj/Credits.html; sourceTree = "<group>"; };
+		F545407D025604370100000A /* DUFakeInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUFakeInterface.m; sourceTree = "<group>"; };
+		F545407E025604370100000A /* DUFakeInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUFakeInterface.h; sourceTree = "<group>"; };
+		F56570BC01B77DC3018453F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		F56570BE01B7801B018453F3 /* DUDefaultInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUDefaultInterface.m; sourceTree = "<group>"; };
+		F56570BF01B7801B018453F3 /* DUDefaultInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUDefaultInterface.h; sourceTree = "<group>"; };
+		F56570D601B7DD1D018453F3 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		F56570D801B7DD57018453F3 /* French */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		F565F27D02EB5ACB0100000A /* DUEasyDNSUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUEasyDNSUpdater.h; sourceTree = "<group>"; };
+		F565F27E02EB5ACB0100000A /* DUEasyDNSUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUEasyDNSUpdater.m; sourceTree = "<group>"; };
+		F565F28102EB61830100000A /* DUEasyDNSInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUEasyDNSInterface.h; sourceTree = "<group>"; };
+		F565F28202EB61830100000A /* DUEasyDNSInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUEasyDNSInterface.m; sourceTree = "<group>"; };
+		F565F28602EB61B30100000A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/EasyDNS.com.nib; sourceTree = "<group>"; };
+		F5721C3B021814B501844B0F /* DUServiceInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUServiceInterface.h; sourceTree = "<group>"; };
+		F5721C3C021814B501844B0F /* DUServiceInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUServiceInterface.m; sourceTree = "<group>"; };
+		F5721C3F0218194C01844B0F /* DUDynDNSInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUDynDNSInterface.h; sourceTree = "<group>"; };
+		F5721C400218194C01844B0F /* DUDynDNSInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUDynDNSInterface.m; sourceTree = "<group>"; };
+		F5721C490218215C01844B0F /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DynDNS.org.nib; sourceTree = "<group>"; };
+		F5721C4B0218219301844B0F /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/DynDNS.org.nib; sourceTree = "<group>"; };
+		F5721C4C0218219301844B0F /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/DynDNS.org.nib; sourceTree = "<group>"; };
+		F574253501B95B52018453F3 /* German */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		F574253C01B9649D018453F3 /* duInstallDaemon.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = duInstallDaemon.py; sourceTree = "<group>"; };
+		F574253D01B9649D018453F3 /* startDaemon.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = startDaemon.py; sourceTree = "<group>"; };
+		F574253E01B9649D018453F3 /* duUninstallDaemon.py */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.python; path = duUninstallDaemon.py; sourceTree = "<group>"; };
+		F58B5F2E0148EB2701000001 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = English; path = English.lproj/DNSUpdateHelp.rtfd; sourceTree = "<group>"; };
+		F59CC5B80243A30D0185E7BC /* Italian */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F59CC5B90243A30D0185E7BC /* Italian */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F59CC5BA0243A30D0185E7BC /* Italian */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = Italian; path = Italian.lproj/Credits.html; sourceTree = "<group>"; };
+		F59CC5BB0243A3700185E7BC /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = Italian; path = Italian.lproj/DNSUpdateHelp.rtfd; sourceTree = "<group>"; };
+		F59CC5BC0243A3C10185E7BC /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F59CC5BD0243A3C10185E7BC /* Italian */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		F59CC5BE0243A3F10185E7BC /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/DynDNS.org.nib; sourceTree = "<group>"; };
+		F59CC5BF0243A3F10185E7BC /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/ZoneEdit.com.nib; sourceTree = "<group>"; };
+		F5C6013E018410AB01845059 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5C60140018410D001845059 /* French */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5CB20E0017B2F8001845059 /* French */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = French; path = French.lproj/Credits.html; sourceTree = "<group>"; };
+		F5CB20E1017B2FAF01845059 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = French; path = French.lproj/DNSUpdateHelp.rtfd; sourceTree = "<group>"; };
+		F5CB67240215FCAD01844B0F /* Add User.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Add User.tiff"; sourceTree = "<group>"; };
+		F5CB67260215FDCD01844B0F /* Add Host.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Add Host.tiff"; sourceTree = "<group>"; };
+		F5CB67280215FEDD01844B0F /* Remove.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Remove.tiff; sourceTree = "<group>"; };
+		F5CB672A0216007101844B0F /* Edit.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Edit.tiff; sourceTree = "<group>"; };
+		F5EB3EC202215F5B01844B0F /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = German; path = German.lproj/DNSUpdateHelp.rtfd; sourceTree = "<group>"; };
+		F5F70B6C019CA77701845059 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5F70B6D019CA77701845059 /* French */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5F70B6F019CA7BB01845059 /* German */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5F70B70019CA7BB01845059 /* German */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = German; path = German.lproj/Credits.html; sourceTree = "<group>"; };
+		F5F70B72019CA7BB01845059 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5F70B74019CA8C601845059 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5F70B75019CA8C601845059 /* French */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5F70B76019CA8C601845059 /* German */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2E55BCF087B371200BE3C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55BD0087B371200BE3C85 /* Foundation.framework in Frameworks */,
+				F2E55BD1087B371200BE3C85 /* SystemConfiguration.framework in Frameworks */,
+				F2E55BD2087B371200BE3C85 /* CoreFoundation.framework in Frameworks */,
+				F2E55BD3087B371200BE3C85 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E55C0C087B371200BE3C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55C0D087B371200BE3C85 /* Cocoa.framework in Frameworks */,
+				F2E55C0E087B371200BE3C85 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016F8052007D17897F000001 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				0387D8D900810BC37F000001 /* Resources */,
+				0387D8DA00810BC37F000001 /* Headers */,
+				0387D8DB00810BC37F000001 /* Sources */,
+				F5059300021857AE01844B0F /* Services Interfaces */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		02F5C2600075BBDA7F000001 = {
+			isa = PBXGroup;
+			children = (
+				02F5C2610075BC767F000001 /* Daemon */,
+				016F8052007D17897F000001 /* GUI */,
+				02F5C2640075BC767F000001 /* Frameworks */,
+				02F5C26B0075C0877F000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02F5C2610075BC767F000001 /* Daemon */ = {
+			isa = PBXGroup;
+			children = (
+				02F5C2620075BC767F000001 /* Sources */,
+				02F5C2630075BC767F000001 /* Headers */,
+				F50592FF021857AE01844B0F /* Services Updaters */,
+				F5CA7682021F628101844B0F /* Interfaces */,
+			);
+			name = Daemon;
+			sourceTree = "<group>";
+		};
+		02F5C2620075BC767F000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				02F5C2770075C3A67F000001 /* DNSUpdate_main.m */,
+				02F5C2670075BCAC7F000001 /* DUInterface.m */,
+				05CEC1CE0075E9E57F000001 /* HTTPLoader.m */,
+				05CEC1DC0076062B7F000001 /* DUServiceUpdater.m */,
+				109A862300773E2A7F000001 /* DUUser.m */,
+				195EA569007B77017F000001 /* DUHost.m */,
+				0387D8A2007F470B7F000001 /* DULibraryManager.m */,
+				0387D8A60080890B7F000001 /* DUDaemon.m */,
+				0387D8AA00809E0D7F000001 /* DUGuardian.m */,
+				0387D8AB00809E0D7F000001 /* DUProxy.m */,
+				0387D8B40080AAC17F000001 /* DUClient.m */,
+				F50593010219537301844B0F /* DUGenericHTTPUpdater.m */,
+				F208FF2E09F2405900C8C3C4 /* DUMachBootstrapServer.h */,
+				F208FF2F09F2405900C8C3C4 /* DUMachBootstrapServer.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		02F5C2630075BC767F000001 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				02F5C2680075BCAC7F000001 /* DUInterface.h */,
+				05CEC1CF0075E9E57F000001 /* HTTPLoader.h */,
+				05CEC1DD0076062B7F000001 /* DUServiceUpdater.h */,
+				109A862400773E2A7F000001 /* DUUser.h */,
+				195EA56A007B77017F000001 /* DUHost.h */,
+				0387D8A3007F470B7F000001 /* DULibraryManager.h */,
+				0387D8A70080890B7F000001 /* DUDaemon.h */,
+				0387D8AC00809E0D7F000001 /* DUGuardian.h */,
+				0387D8AD00809E0D7F000001 /* DUProxy.h */,
+				0387D8B20080A4877F000001 /* DUProtocols.h */,
+				0387D8B50080AAC17F000001 /* DUClient.h */,
+				22ED734C008CDC037F000001 /* DUCommon.h */,
+				F50593020219537301844B0F /* DUGenericHTTPUpdater.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		02F5C2640075BC767F000001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F5C2650075BC767F000001 /* Cocoa.framework */,
+				05CEC1CA0075E8F37F000001 /* Foundation.framework */,
+				02F5C2660075BC767F000001 /* AppKit.framework */,
+				F56570BC01B77DC3018453F3 /* SystemConfiguration.framework */,
+				22ED7354008F73D17F000001 /* Security.framework */,
+				F5059310021C42DC01844B0F /* CoreFoundation.framework */,
+				F5059311021C42DC01844B0F /* CoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02F5C26B0075C0877F000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E55BD5087B371200BE3C85 /* dnsupdate */,
+				F2E55C12087B371200BE3C85 /* DNSUpdate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0387D8D900810BC37F000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2E55C11087B371200BE3C85 /* Info-DNSUpdate_GUI.plist */,
+				F5F70B73019CA8C601845059 /* InfoPlist.strings */,
+				F5C6013D018410AB01845059 /* Localizable.strings */,
+				016F8053007D18217F000001 /* DNSUpdate_icon */,
+				016F8054007D18217F000001 /* DNSUpdateIcon.icns */,
+				016F8055007D18217F000001 /* DNSUpdateIcon.tif */,
+				016F8057007D194C7F000001 /* DNSUpdateIcon.psd */,
+				F5CB67240215FCAD01844B0F /* Add User.tiff */,
+				F5CB67260215FDCD01844B0F /* Add Host.tiff */,
+				F5CB672A0216007101844B0F /* Edit.tiff */,
+				F5CB67280215FEDD01844B0F /* Remove.tiff */,
+				F574253C01B9649D018453F3 /* duInstallDaemon.py */,
+				F574253D01B9649D018453F3 /* startDaemon.py */,
+				F574253E01B9649D018453F3 /* duUninstallDaemon.py */,
+				F53F9B50016BAEC601845096 /* Credits.html */,
+				F58B5F2D0148EB2701000001 /* DNSUpdateHelp.rtfd */,
+				F5F70B6B019CA77701845059 /* MainMenu.nib */,
+				F56570D501B7DD1D018453F3 /* MainMenu.strings */,
+				F2E70A5109F268340025A912 /* org.dnsupdate.daemon.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0387D8DA00810BC37F000001 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0387D8D500810B8D7F000001 /* DUAppController.h */,
+				0387D8E60081B0FB7F000001 /* DUMonitorController.h */,
+				0387D8F40087400A7F000001 /* DUUsersController.h */,
+				F5721C3B021814B501844B0F /* DUServiceInterface.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		0387D8DB00810BC37F000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0387D8D00081022B7F000001 /* GUIMain.m */,
+				0387D8D600810B8D7F000001 /* DUAppController.m */,
+				0387D8E70081B0FB7F000001 /* DUMonitorController.m */,
+				0387D8F30087400A7F000001 /* DUUsersController.m */,
+				F5721C3C021814B501844B0F /* DUServiceInterface.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F50592FF021857AE01844B0F /* Services Updaters */ = {
+			isa = PBXGroup;
+			children = (
+				05CEC1E1007606917F000001 /* DUDynDNSUpdater.h */,
+				05CEC1E0007606917F000001 /* DUDynDNSUpdater.m */,
+				F5059305021964A301844B0F /* DUZoneEditUpdater.h */,
+				F5059306021964A301844B0F /* DUZoneEditUpdater.m */,
+				F565F27D02EB5ACB0100000A /* DUEasyDNSUpdater.h */,
+				F565F27E02EB5ACB0100000A /* DUEasyDNSUpdater.m */,
+			);
+			name = "Services Updaters";
+			sourceTree = "<group>";
+		};
+		F5059300021857AE01844B0F /* Services Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F5721C3F0218194C01844B0F /* DUDynDNSInterface.h */,
+				F5721C400218194C01844B0F /* DUDynDNSInterface.m */,
+				F5721C480218215C01844B0F /* DynDNS.org.nib */,
+				F505930C02196BDB01844B0F /* DUZoneEditInterface.h */,
+				F505930D02196BDB01844B0F /* DUZoneEditInterface.m */,
+				F505930902196B9801844B0F /* ZoneEdit.com.nib */,
+				F565F28102EB61830100000A /* DUEasyDNSInterface.h */,
+				F565F28202EB61830100000A /* DUEasyDNSInterface.m */,
+				F565F28502EB61B30100000A /* EasyDNS.com.nib */,
+			);
+			name = "Services Interfaces";
+			sourceTree = "<group>";
+		};
+		F5CA7682021F628101844B0F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F56570BE01B7801B018453F3 /* DUDefaultInterface.m */,
+				F56570BF01B7801B018453F3 /* DUDefaultInterface.h */,
+				02F5C26A0075BDB37F000001 /* DUInternalInterface.m */,
+				02F5C2690075BDB37F000001 /* DUInternalInterface.h */,
+				05CEC1E400760E0A7F000001 /* DUExternalInterface.m */,
+				05CEC1E500760E0A7F000001 /* DUExternalInterface.h */,
+				F545407D025604370100000A /* DUFakeInterface.m */,
+				F545407E025604370100000A /* DUFakeInterface.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F2E55BA6087B371200BE3C85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55BA7087B371200BE3C85 /* DUInterface.h in Headers */,
+				F2E55BA8087B371200BE3C85 /* DUInternalInterface.h in Headers */,
+				F2E55BA9087B371200BE3C85 /* HTTPLoader.h in Headers */,
+				F2E55BAA087B371200BE3C85 /* DUServiceUpdater.h in Headers */,
+				F2E55BAB087B371200BE3C85 /* DUDynDNSUpdater.h in Headers */,
+				F2E55BAC087B371200BE3C85 /* DUExternalInterface.h in Headers */,
+				F2E55BAD087B371200BE3C85 /* DUUser.h in Headers */,
+				F2E55BAE087B371200BE3C85 /* DUHost.h in Headers */,
+				F2E55BAF087B371200BE3C85 /* DULibraryManager.h in Headers */,
+				F2E55BB0087B371200BE3C85 /* DUDaemon.h in Headers */,
+				F2E55BB1087B371200BE3C85 /* DUGuardian.h in Headers */,
+				F2E55BB2087B371200BE3C85 /* DUProxy.h in Headers */,
+				F2E55BB3087B371200BE3C85 /* DUProtocols.h in Headers */,
+				F2E55BB4087B371200BE3C85 /* DUClient.h in Headers */,
+				F2E55BB5087B371200BE3C85 /* DUCommon.h in Headers */,
+				F2E55BB6087B371200BE3C85 /* DUDefaultInterface.h in Headers */,
+				F2E55BB7087B371200BE3C85 /* DUGenericHTTPUpdater.h in Headers */,
+				F2E55BB8087B371200BE3C85 /* DUZoneEditUpdater.h in Headers */,
+				F2E55BB9087B371200BE3C85 /* DUFakeInterface.h in Headers */,
+				F2E55BBA087B371200BE3C85 /* DUEasyDNSUpdater.h in Headers */,
+				F208FF3009F2405900C8C3C4 /* DUMachBootstrapServer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E55BD9087B371200BE3C85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55BDA087B371200BE3C85 /* DUAppController.h in Headers */,
+				F2E55BDB087B371200BE3C85 /* DUClient.h in Headers */,
+				F2E55BDC087B371200BE3C85 /* DUUser.h in Headers */,
+				F2E55BDD087B371200BE3C85 /* DUHost.h in Headers */,
+				F2E55BDE087B371200BE3C85 /* DUProtocols.h in Headers */,
+				F2E55BDF087B371200BE3C85 /* DUInterface.h in Headers */,
+				F2E55BE0087B371200BE3C85 /* DUServiceUpdater.h in Headers */,
+				F2E55BE1087B371200BE3C85 /* DUMonitorController.h in Headers */,
+				F2E55BE2087B371200BE3C85 /* DUUsersController.h in Headers */,
+				F2E55BE3087B371200BE3C85 /* DULibraryManager.h in Headers */,
+				F2E55BE4087B371200BE3C85 /* DUCommon.h in Headers */,
+				F2E55BE5087B371200BE3C85 /* DUDynDNSUpdater.h in Headers */,
+				F2E55BE6087B371200BE3C85 /* DUServiceInterface.h in Headers */,
+				F2E55BE7087B371200BE3C85 /* DUDynDNSInterface.h in Headers */,
+				F2E55BE8087B371200BE3C85 /* DUZoneEditInterface.h in Headers */,
+				F2E55BE9087B371200BE3C85 /* DUEasyDNSInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F2E55BA5087B371200BE3C85 /* dnsupdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208FF1509F23E3400C8C3C4 /* Build configuration list for PBXNativeTarget "dnsupdate" */;
+			buildPhases = (
+				F2E55BA6087B371200BE3C85 /* Headers */,
+				F2E55BBB087B371200BE3C85 /* Sources */,
+				F2E55BCF087B371200BE3C85 /* Frameworks */,
+				F2E55BD4087B371200BE3C85 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dnsupdate;
+			productInstallPath = /usr/local/bin;
+			productName = dnsupdate;
+			productReference = F2E55BD5087B371200BE3C85 /* dnsupdate */;
+			productType = "com.apple.product-type.tool";
+		};
+		F2E55BD7087B371200BE3C85 /* DNSUpdate GUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208FF1909F23E3400C8C3C4 /* Build configuration list for PBXNativeTarget "DNSUpdate GUI" */;
+			buildPhases = (
+				F2E55BD9087B371200BE3C85 /* Headers */,
+				F2E55BEA087B371200BE3C85 /* Resources */,
+				F2E55BFD087B371200BE3C85 /* Sources */,
+				F2E55C0C087B371200BE3C85 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2E55C17087B371200BE3C85 /* PBXTargetDependency */,
+			);
+			name = "DNSUpdate GUI";
+			productInstallPath = /;
+			productName = DNSUpdate;
+			productReference = F2E55C12087B371200BE3C85 /* DNSUpdate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02F5C25F0075BBDA7F000001 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F208FF2109F23E3400C8C3C4 /* Build configuration list for PBXProject "DNSUpdate2" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Spanish,
+				Italian,
+			);
+			mainGroup = 02F5C2600075BBDA7F000001;
+			productRefGroup = 02F5C26B0075C0877F000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2E55BA3087B371200BE3C85 /* All */,
+				F2E55BA5087B371200BE3C85 /* dnsupdate */,
+				F2E55BD7087B371200BE3C85 /* DNSUpdate GUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2E55BEA087B371200BE3C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55BEB087B371200BE3C85 /* DNSUpdateIcon.icns in Resources */,
+				F2E55C18087B371200BE3C85 /* dnsupdate in Resources */,
+				F2E55BED087B371200BE3C85 /* DNSUpdateHelp.rtfd in Resources */,
+				F2E55BEE087B371200BE3C85 /* Credits.html in Resources */,
+				F2E55BEF087B371200BE3C85 /* Localizable.strings in Resources */,
+				F2E55BF0087B371200BE3C85 /* MainMenu.nib in Resources */,
+				F2E55BF1087B371200BE3C85 /* InfoPlist.strings in Resources */,
+				F2E55BF2087B371200BE3C85 /* MainMenu.strings in Resources */,
+				F2E55BF3087B371200BE3C85 /* duUninstallDaemon.py in Resources */,
+				F2E55BF4087B371200BE3C85 /* duInstallDaemon.py in Resources */,
+				F2E55BF5087B371200BE3C85 /* startDaemon.py in Resources */,
+				F2E55BF6087B371200BE3C85 /* Add User.tiff in Resources */,
+				F2E55BF7087B371200BE3C85 /* Add Host.tiff in Resources */,
+				F2E55BF8087B371200BE3C85 /* Remove.tiff in Resources */,
+				F2E55BF9087B371200BE3C85 /* Edit.tiff in Resources */,
+				F2E55BFA087B371200BE3C85 /* DynDNS.org.nib in Resources */,
+				F2E55BFB087B371200BE3C85 /* ZoneEdit.com.nib in Resources */,
+				F2E55BFC087B371200BE3C85 /* EasyDNS.com.nib in Resources */,
+				F2E70A5809F26CE00025A912 /* org.dnsupdate.daemon.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F2E55BD4087B371200BE3C85 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2E55BBB087B371200BE3C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55BBC087B371200BE3C85 /* DUInterface.m in Sources */,
+				F2E55BBD087B371200BE3C85 /* DUInternalInterface.m in Sources */,
+				F2E55BBE087B371200BE3C85 /* DNSUpdate_main.m in Sources */,
+				F2E55BBF087B371200BE3C85 /* HTTPLoader.m in Sources */,
+				F2E55BC0087B371200BE3C85 /* DUServiceUpdater.m in Sources */,
+				F2E55BC1087B371200BE3C85 /* DUDynDNSUpdater.m in Sources */,
+				F2E55BC2087B371200BE3C85 /* DUExternalInterface.m in Sources */,
+				F2E55BC3087B371200BE3C85 /* DUUser.m in Sources */,
+				F2E55BC4087B371200BE3C85 /* DUHost.m in Sources */,
+				F2E55BC5087B371200BE3C85 /* DULibraryManager.m in Sources */,
+				F2E55BC6087B371200BE3C85 /* DUDaemon.m in Sources */,
+				F2E55BC7087B371200BE3C85 /* DUGuardian.m in Sources */,
+				F2E55BC8087B371200BE3C85 /* DUProxy.m in Sources */,
+				F2E55BC9087B371200BE3C85 /* DUClient.m in Sources */,
+				F2E55BCA087B371200BE3C85 /* DUDefaultInterface.m in Sources */,
+				F2E55BCB087B371200BE3C85 /* DUGenericHTTPUpdater.m in Sources */,
+				F2E55BCC087B371200BE3C85 /* DUZoneEditUpdater.m in Sources */,
+				F2E55BCD087B371200BE3C85 /* DUFakeInterface.m in Sources */,
+				F2E55BCE087B371200BE3C85 /* DUEasyDNSUpdater.m in Sources */,
+				F208FF3109F2405900C8C3C4 /* DUMachBootstrapServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E55BFD087B371200BE3C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E55BFE087B371200BE3C85 /* GUIMain.m in Sources */,
+				F2E55BFF087B371200BE3C85 /* DUAppController.m in Sources */,
+				F2E55C00087B371200BE3C85 /* DUClient.m in Sources */,
+				F2E55C01087B371200BE3C85 /* DUInterface.m in Sources */,
+				F2E55C02087B371200BE3C85 /* DUHost.m in Sources */,
+				F2E55C03087B371200BE3C85 /* DUServiceUpdater.m in Sources */,
+				F2E55C04087B371200BE3C85 /* DUMonitorController.m in Sources */,
+				F2E55C05087B371200BE3C85 /* DUUsersController.m in Sources */,
+				F2E55C06087B371200BE3C85 /* DUUser.m in Sources */,
+				F2E55C07087B371200BE3C85 /* DULibraryManager.m in Sources */,
+				F2E55C08087B371200BE3C85 /* DUServiceInterface.m in Sources */,
+				F2E55C09087B371200BE3C85 /* DUDynDNSInterface.m in Sources */,
+				F2E55C0A087B371200BE3C85 /* DUZoneEditInterface.m in Sources */,
+				F2E55C0B087B371200BE3C85 /* DUEasyDNSInterface.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2E55C15087B371200BE3C85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2E55BD7087B371200BE3C85 /* DNSUpdate GUI */;
+			targetProxy = F2E55C14087B371200BE3C85 /* PBXContainerItemProxy */;
+		};
+		F2E55C17087B371200BE3C85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2E55BA5087B371200BE3C85 /* dnsupdate */;
+			targetProxy = F2E55C16087B371200BE3C85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F505930902196B9801844B0F /* ZoneEdit.com.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F505930A02196B9801844B0F /* English */,
+				F505931A021D80B201844B0F /* French */,
+				F505931B021D80B201844B0F /* German */,
+				F505931C021D80B201844B0F /* Spanish */,
+				F59CC5BF0243A3F10185E7BC /* Italian */,
+			);
+			name = ZoneEdit.com.nib;
+			sourceTree = "<group>";
+		};
+		F53F9B50016BAEC601845096 /* Credits.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53F9B51016BAEC601845096 /* English */,
+				F5CB20E0017B2F8001845059 /* French */,
+				F5F70B70019CA7BB01845059 /* German */,
+				F5059317021D80B201844B0F /* Spanish */,
+				F59CC5BA0243A30D0185E7BC /* Italian */,
+			);
+			name = Credits.html;
+			sourceTree = "<group>";
+		};
+		F56570D501B7DD1D018453F3 /* MainMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56570D601B7DD1D018453F3 /* English */,
+				F56570D801B7DD57018453F3 /* French */,
+				F574253501B95B52018453F3 /* German */,
+				F5059318021D80B201844B0F /* Spanish */,
+				F59CC5BD0243A3C10185E7BC /* Italian */,
+			);
+			name = MainMenu.strings;
+			sourceTree = "<group>";
+		};
+		F565F28502EB61B30100000A /* EasyDNS.com.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F565F28602EB61B30100000A /* English */,
+			);
+			name = EasyDNS.com.nib;
+			sourceTree = "<group>";
+		};
+		F5721C480218215C01844B0F /* DynDNS.org.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5721C490218215C01844B0F /* English */,
+				F5721C4B0218219301844B0F /* French */,
+				F5721C4C0218219301844B0F /* German */,
+				F5059319021D80B201844B0F /* Spanish */,
+				F59CC5BE0243A3F10185E7BC /* Italian */,
+			);
+			name = DynDNS.org.nib;
+			sourceTree = "<group>";
+		};
+		F58B5F2D0148EB2701000001 /* DNSUpdateHelp.rtfd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58B5F2E0148EB2701000001 /* English */,
+				F5CB20E1017B2FAF01845059 /* French */,
+				F5059314021D804401844B0F /* Spanish */,
+				F5EB3EC202215F5B01844B0F /* German */,
+				F59CC5BB0243A3700185E7BC /* Italian */,
+			);
+			name = DNSUpdateHelp.rtfd;
+			sourceTree = "<group>";
+		};
+		F5C6013D018410AB01845059 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C6013E018410AB01845059 /* English */,
+				F5C60140018410D001845059 /* French */,
+				F5F70B6F019CA7BB01845059 /* German */,
+				F5059316021D80B201844B0F /* Spanish */,
+				F59CC5B90243A30D0185E7BC /* Italian */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F5F70B6B019CA77701845059 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5F70B6C019CA77701845059 /* English */,
+				F5F70B6D019CA77701845059 /* French */,
+				F5F70B72019CA7BB01845059 /* German */,
+				F5059315021D804401844B0F /* Spanish */,
+				F59CC5BC0243A3C10185E7BC /* Italian */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		F5F70B73019CA8C601845059 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5F70B74019CA8C601845059 /* English */,
+				F5F70B75019CA8C601845059 /* French */,
+				F5F70B76019CA8C601845059 /* German */,
+				F505931E021D811401844B0F /* Spanish */,
+				F59CC5B80243A30D0185E7BC /* Italian */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F208FF1609F23E3400C8C3C4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.7;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dnsupdate;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F208FF1709F23E3400C8C3C4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2.7;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dnsupdate;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F208FF1809F23E3400C8C3C4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2.7;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dnsupdate;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F208FF1A09F23E3400C8C3C4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.7;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Info-DNSUpdate_GUI.plist";
+				INSTALL_PATH = /;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DNSUpdate;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F208FF1B09F23E3400C8C3C4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2.7;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = "Info-DNSUpdate_GUI.plist";
+				INSTALL_PATH = /;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DNSUpdate;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F208FF1C09F23E3400C8C3C4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2.7;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = "Info-DNSUpdate_GUI.plist";
+				INSTALL_PATH = /;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DNSUpdate;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		F208FF1E09F23E3400C8C3C4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F208FF1F09F23E3400C8C3C4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F208FF2009F23E3400C8C3C4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = All;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		F208FF2209F23E3400C8C3C4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		F208FF2309F23E3400C8C3C4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DEPLOYMENT_POSTPROCESSING = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		F208FF2409F23E3400C8C3C4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F208FF1509F23E3400C8C3C4 /* Build configuration list for PBXNativeTarget "dnsupdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208FF1609F23E3400C8C3C4 /* Development */,
+				F208FF1709F23E3400C8C3C4 /* Deployment */,
+				F208FF1809F23E3400C8C3C4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F208FF1909F23E3400C8C3C4 /* Build configuration list for PBXNativeTarget "DNSUpdate GUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208FF1A09F23E3400C8C3C4 /* Development */,
+				F208FF1B09F23E3400C8C3C4 /* Deployment */,
+				F208FF1C09F23E3400C8C3C4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F208FF1D09F23E3400C8C3C4 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208FF1E09F23E3400C8C3C4 /* Development */,
+				F208FF1F09F23E3400C8C3C4 /* Deployment */,
+				F208FF2009F23E3400C8C3C4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F208FF2109F23E3400C8C3C4 /* Build configuration list for PBXProject "DNSUpdate2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208FF2209F23E3400C8C3C4 /* Development */,
+				F208FF2309F23E3400C8C3C4 /* Deployment */,
+				F208FF2409F23E3400C8C3C4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02F5C25F0075BBDA7F000001 /* Project object */;
+}

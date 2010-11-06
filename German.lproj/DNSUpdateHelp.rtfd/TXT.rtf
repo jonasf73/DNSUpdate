@@ -1,0 +1,326 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf350
+{\fonttbl\f0\froman\fcharset77 Times-Bold;\f1\froman\fcharset77 Times-Roman;\f2\froman\fcharset77 Times-Italic;
+\f3\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\qc
+
+\f0\b\fs100 \cf0 DNSUpdate 2\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\fs28 \cf0 DNSUpdate\'ca2
+\f1\b0  ist ein speziell f\'9fr MacOS X geschriebenes Programm, dass es Ihnen erlaubt, dynamische DNS-Dienste wie die von DynDNS.org und ZoneEdit.com zu nutzen. Es wird automatisch beim Hochfahren ihres Rechners gestartet, und enth\'8alt ein Programm zur komfortabeln Einstellung aller Parameter und zur \'86berwachung aller T\'8atigkeiten.\
+\
+\
+
+\f0\b \ul Inhaltsverzeichnis\
+
+\f2\i\b0 \ulnone 	Schnelleinstieg\
+        	Aktivierung des DNSUpdate-D\'8amons\
+	DNSUpdate \'9fberwachen\
+        	DNSUpdate deinstallieren\
+	Wie stellt man die Schnittstelle ein?\
+	H\'8aufige Probleme\
+	Unixxxxxxxxx\
+	Dateien\
+	Lizenz\
+
+\f1\i0 \
+Aktuelle und genauere Informationen, die neueste Programmversion, eine kurze FAQ und anderes finden Sie unter 
+\f2\i http://www.dnsupdate.org
+\f1\i0 .\
+Sie k\'9annen auch Support via Email erhalten unter der Adresse 
+\f2\i support@dnsupdate.org
+\f1\i0 .\
+(Siehe About-Box)\
+
+\f2\i \
+
+\f0\i0\b \ul Schnelleinstieg
+\f1\b0 \ulnone \
+Als erste Vorraussetzung ben\'9atigen Sie einen registrierten Zugang bei einem von DNSUpdate unterst\'9ftzten DNS-Dienst. Sollten Sie noch keinen solchen besitzen, dann k\'9annen Sie im \'e3\'86ber DNSUpdate\'d2-Dialog eine Liste mit unterst\'9ftzen Anbietern inklusive Homepage finden, und bei einem davon einen Zugang registrieren. Notieren Sie sich bitte Ihren Benutzernamen (z.B.: 
+\f2\i meinzugang
+\f1\i0 ) und Ihr Passwort (z.B. 
+\f2\i meinpasswort
+\f1\i0 ).\
+\
+Als n\'8achstes m\'9fssen Sie mindestens einen Host f\'9fr diesen Benutzer anlegen (z.B. 
+\f2\i meinhost.dnsalias.net
+\f1\i0 ). Wie das genau geht, h\'8angt von dem von Ihnen gew\'8ahlten Anbieter ab.\
+\
+Starten Sie nun das 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm. Sie ben\'9atigen 
+\f0\b Administrator
+\f1\b0 -Rechte, um dies zu tun!\
+Falls notwendig wird jetzt der D\'8amon und ein StartupItem installiert (Sie werden evtl. nach Ihrem Administrator-Passwort gefragt). Der wichtigste Teil von 
+\f0\b DNSUpdate\'ca2
+\f1\b0  ist der D\'8amon, der automatisch beim Hochfahren des Rechners gestartet wird und dann st\'8andig im Hintergrund l\'8auft. Das 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm 
+\f0\b muss nicht laufen
+\f1\b0 , damit alles funktioniert, sondern dient lediglich dem Installieren, Konfigurieren und \'86berwachen des D\'8amons.\
+\
+\'85ffnen Sie die Benutzerliste (\'e3Ablage->Benutzer bearbeiten\'d2 oder Befehl-U).\
+\
+Erstellen Sie nun einen neuen Benutzer (\'e3Benutzer hinzuf\'9fgen\'d2) mit Ihrem Benutzernamen und Ihrem Passwort (
+\f2\i meinzugang
+\f1\i0  and 
+\f2\i meinpasswort
+\f1\i0 ) und w\'8ahlen Sie den entsprechenden Dienst (
+\f2\i derdienst
+\f1\i0 ). Der neue Benutzer erscheint nun in der Benutzerliste als 
+\f2\i meinzugang@derdienst
+\f1\i0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 1.jpg \width8320 \height6260
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+W\'8ahlen Sie den neu angelegten Benutzer in der Liste aus und legen Sie einen neuen Host an (\'e3Host hinzuf\'9fgen\'d2) mit dem von Ihnen registrierten Namen (
+\f2\i meinhost.dnsalias.net
+\f1\i0 ). Achtung, 
+\f0\b der Name des Hosts muss vollst\'8andig sein
+\f1\b0 , mit dem Domain-Namen. W\'8ahlen Sie die Schnittstelle f\'9fr diesen Host (siehe unten: 
+\f2\i Wie stellt man die Schnittstelle ein?
+\f1\i0 ) und bei Bedarf die sonstigen Host-Einstellungen. Im Falle von DynDNS.org k\'9annen Sie zum Beispiel zwischen verschiedenen Host-Typen w\'8ahlen (dyndns f\'9fr dynamisches DNS, statdns f\'9fr statisches DNS oder custom f\'9fr angepasstes DNS) und noch andere Einstellungen treffen.\
+Der neue Host erscheint nun unterhalb des Benutzers in der Benutzerlist (\'8ahnlich wie in der Listendarstellung des Finders).\
+Mit 
+\f0\b DNSUpdate\'ca2
+\f1\b0  k\'9annen Sie problemlos mehrere Benutzer anlegen, oder auch mehrere Hosts unter einem einzelnen Benutzer (sofern der jeweilige Dienstanbieter dies unterst\'9ftzt).\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 2.jpg \width8220 \height6220
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 Jetzt k\'9annen Sie den Benutzer 
+\f2\i meinzugang
+\f1\i0  einfach aktivieren, indem Sie mittels eines Klicks ein H\'8akchen in das daf\'9fr vorgesehene Feld setzen. Normalerweise ist das alles, was Sie tun m\'9fssen, um mit 
+\f0\b DNSUpdate\'ca2
+\f1\b0  dynamische DNS-Dienste zu nuten. Sie k\'9annen das 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm beenden, oder es laufen lassen, um den D\'8amon zu \'9fberwachen (siehe 
+\f2\i DNSUpdate \'9fberwachen
+\f1\i0 ).\
+Falls ein Benutzer oder ein Host in der Benutzerliste automatisch deaktiviert wird, liegt ein Problem mit Ihren Einstellungen vor. Unter \'e3H\'8aufige Problem\'d2 finden Sie einige typische Fehler und wie sie behoben werden k\'9annen. Der korrekte Status f\'9fr Benutzer und Hosts ist \'e3OK\'d2.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Aktivierung des DNSUpdate-D\'8amons
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone Im Einstellungs-Fenster (\'e3DNSUpdate->Einstellungen\'d2) k\'9annen Sie bestimmen, wann der D\'8amon gestartet werden soll. Zur Wahl steht, ihn beim Hochfahren des Rechners immer zu (de)aktivieren, den letzten Zustand \'9fber Neustarts hinweg beizubehalten oder ihn nur zu aktivieren, wenn das 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm gestartet wird.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 DNSUpdate \'9fberwachen
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone Der D\'8amon verrichtet seine Arbeit auch wenn das 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm nicht l\'8auft. Er \'9fberpr\'9fft jede Minute die IP-Adresse des Rechners (alle 15 Minuten wenn die Schnittstelle \'e3External\'d2 oder \'e3External (bypassing Proxy)\'d2 ist) und aktualisiert bei Bedarf die Datenbank des dynamischen DNS-Dienstes. Das 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm kann zur \'86berwachung der Aktivit\'8aten des D\'8amons eingesetzt werden. Sie sollten den D\'8amon wenigstens zu Anfang einige (kurze) Zeit \'9fberwachen, um sicherzustellen, dass Ihre Einstellungen korrekt sind und alles erwartungsgem\'8a\'a7 funktioniert.\
+\
+Schlie\'a7en Sie die Benutzerliste und \'9affnen Sie die \'86bersicht (\'e3Fenster->\'86bersicht \'9affnen\'d2 oder Befehl-O).\
+\
+In diesem Fenster k\'9annen Sie \'9fberpr\'9ffen, ob Ihre IP registriert ist und die Uhrzeit zu der sie registriert wurde sehen. Falls ein Fehler vorliegt, wird dieser im Status-Feld angezeigt (siehe unten: 
+\f2\i H\'8aufige Probleme
+\f1\i0 ).\
+\
+Sie k\'9annen einen Host vor\'9fbergehend 
+\f0\b deaktivieren
+\f1\b0  (d.h. der D\'8amon wird ihn nicht aktualisieren) oder 
+\f0\b reaktivieren
+\f1\b0  (falls er vorher manuell oder aufgrund eines Fehlers deaktiviert wurde. In letzterem Fall sollten Sie erst sicherstellen, dass das Problem behoben ist bevor Sie den Host reaktivieren!). Sie k\'9annen Hosts aber auch in der Benutzerliste (de)aktivieren.\
+\
+Weiterhin k\'9annen Sie hier den D\'8amon anhalten oder starten indem Sie auf die daf\'9fr vorgesehene Schaltfl\'8ache klicken. Wenn der D\'8amon angehalten ist, stellt er jegliche Aktivit\'8at ein.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 4.jpg \width11380 \height3020
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 3.jpg \width15100 \height3040
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+F\'9fr fortgeschrittene Benutzer gibt es die M\'9aglichkeit, die Protokoll-Datei des D\'8amons einzusehen (\'e3Werkzeuge->Protokoll \'9affnen\'d2 oder Befehl-L).\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 DNSUpdate deinstallieren
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 Benuten Sie den "DNSUpdate deinstallieren" Befehl aus dem Werkzeug-Men\'9f um DNSUpdate (D\'8amon und StartupItem) zu entfernen. Sie m\'9fssen Ihr Administrator-Passwort eingeben um dies zu tun. Das Programm beendet sich automatisch nach diesem Vorgang, und kann dann gel\'9ascht werden.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Wie stellt man die Schnittstelle ein?
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 Bei der Einrichtung eines Hosts m\'9fssen Sie die \'e3Schnittstelle\'d2 einstellen, je nach dem wie Sie mit dem Internet verbunden sind:\
+\
+\'e1 Normalerweise gen\'9fgt es, \'e3Default Interface\'d2 anzuw\'8ahlen. DNSUpdate verwendet dann die in den Netzwerk-Einstellungen angegebene Schnittstelle (wenn sich dieses dort \'8andert, bemerkt der D\'8amon dies automatisch und passt sich entsprechend an).\
+\'e1 Mit einem eingebauten Modem: \'e3Internal Modem"\
+\'e1 Mit einem Kabel-Modem \'9fber Ihr internes Ethernet, oder wenn Sie direkt mit dem Internet verbunden sind: \'e3Built-In Ethernet\'d2\
+\'e1 Mit einer zweiten (nicht der standardm\'8a\'a7ig eingebauten) Ethernet-Karte: \'e3Secondary Ethernet\'d2\
+\'e1 Mit DSL und PPPoE: \'e3ADSL Modem (PPPoE)\'d2\
+\'e1 Wenn Sie hinter einem Router sind: \'e3External\'d2\
+\'e1 Wenn Sie hinter einem Router und einem Proxy sind: \'e3External (bypassing Proxy)\'d2\
+\
+Wenn alles andere versagt, dann sollten Sie \'e3External (bypassing Proxy)\'d2 w\'8ahlen, dies sollte immer funktionieren. Falls dies auch nicht hilft, wird Ihre Verbindung nicht unterst\'9ftzt, nehmen Sie dann eventuell Kontakt mit dem Autor auf.\
+\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 H\'8aufige Probleme
+\f1\b0 \ulnone \
+Im folgenden sind einige typische Problem aufgef\'9fhrt, zusammen mit Hinweisen, wie Sie diese eventuell beheben k\'9annen.\
+Falls es ein Problem beim aktualisieren Ihres Hosts gibt, dann steht im Status-Feld eine Fehlermeldung. Die h\'8aufigsten Fehler sind:\
+\
+\'e1 
+\f2\i \'e3Falscher Benutzername oder Passwort\'d2
+\f1\i0 \
+\pard\tx720\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\fi720\ql\qnatural
+\cf0 \'86berpr\'9ffen Sie, ob der Benutzernamen und das Passwort stimmen\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 \'e1 
+\f2\i \'e3Kein solcher Host vorhanden\'d2
+\f1\i0 \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\li720\ql\qnatural
+\cf0 Der angegeben Host ist nicht registriert; \'9fberpr\'9ffen Sie, ob der Hostname korrekt und vollst\'8andig eingegeben wurde.\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 \'e1 
+\f2\i \'e3Geh\'9art nicht zu diesem Benutzer\'d2
+\f1\i0 \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\li720\ql\qnatural
+\cf0 Stellen Sie sicher, dass der Host dem richtigen Benutzer zugeordnet wurde. \'86berpr\'9ffen Sie gegebenenfalls, ob der Hostname korrekt und vollst\'8andig eingegeben wurde.\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 \'e1 
+\f2\i \'e3Wegen Missbrauchs blockiert\'d2
+\f1\i0 \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\li720\ql\qnatural
+\cf0 Ihr Host wurde blockiert. Nehmen Sie Kontakt auf zum Support Ihres Dienst-Anbieters.\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 \'e1 
+\f2\i \'e3Falscher Domainname\'d2
+\f1\i0 \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\li720\ql\qnatural
+\cf0 Sie m\'9fssen einen vollst\'8andigen Hostnamen angeben (also z.B. 
+\f2\i \'e3test.dyndns.org\'d2
+\f1\i0  und nicht nur 
+\f2\i \'e3test\'d2
+\f1\i0 ).\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 \
+Die meisten anderen Fehler sind kritisch (entweder f\'9fr den Dienst oder f\'9fr 
+\f0\b DNSUpdate 2
+\f1\b0 ):\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\li180\fi-180\ql\qnatural
+\cf0 \'e1 Kritische Fehler des dynamischen DNS-Dienstes, wie 
+\f2\i DNS down
+\f1\i0 , 
+\f2\i DNS Error
+\f1\i0 : Nehmen Sie Kontakt auf zum Support Ihres Dienst-Anbieters\
+\'e1 Nicht-kritischer Fehler des dynamischen DNS-Dienstes: 
+\f2\i No Server Answer
+\f1\i0  (Time out\'c9 eventuell ist der Host zeitweilig nicht zu erreichen, versuchen Sie es sp\'8ater noch einmal)\
+\'e1 Alle anderen Fehler sind interne DNSUpdate-Fehler. Kontaktieren Sie in diesem Fall den Programm-Autor (
+\f2\i support@dnsupdate.org
+\f1\i0 ).\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 \
+Manchmal wird vielleicht ihre 
+\f0\b Schnittstelle inaktiv
+\f1\b0  sein. In diesem Fall lag oder liegt ein Problem mit der Schnittstelle vor. M\'9aglicherweise ist die falsche ausgew\'8ahlt. oder. falls es sich um eine externe Schnittstelle handelt, der D\'8amon hatte Problem den externen Server zum Ermitteln Ihrer IP zu erreichen (dieses Problem kann vor\'9fbergehend sein, warten Sie in diesem Fall einfach einige Zeit). Die Schnittstelle ist auch dann inaktiv, wenn Sie vom Internet getrennt sind. Der D\'8amon wird automatisch versuchen die Schnittstelle zu reaktivieren sobald die Probleme behoben sind.\
+\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Unixxxxxxxxx 
+\f1\b0 \ulnone \
+MacOS X ist ein Unix-System. Die Benutzung von DNSUpdate soll so einfach wie m\'9aglich sein, daher hat es auch eine graphische Oberfl\'8ache. Gleichzeitig kann man DNSUpdate aber auch wie ein Unix-Programm von der Kommandozeile aus steuern.\
+In der Tat ist der D\'8amon ein Unix-Programm das in 
+\f2\i /usr/local/sbin
+\f1\i0  installiert ist und \'e3dnsupdate\'d2 hei\'a7t. Sie k\'9annen es einsetzen um den D\'8amon direkt zu steuern. Genau wie beim 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm ben\'9atigen Sie dazu Administrator-Rechte.\
+Und das k\'9annen Sie tun:\
+\'e1 
+\f2\i dnsupdate
+\f1\i0 : Ohne Optionen aufgerufen, erhalten Sie eine kurze Anleitung.\
+\'e1 
+\f2\i dnsupdate pause
+\f1\i0 : H\'8alt den D\'8amon vor\'9fbergehend an.\
+\'e1 
+\f2\i dnsupdate start
+\f1\i0 : Startet den D\'8amon.\
+\'e1 
+\f2\i dnsupdate quit
+\f1\i0 : Beendet den D\'8amon.\
+\'e1 
+\f2\i dnsupdate magic
+\f1\i0 : Gibt die Version des D\'8amons aus (wird nur vom 
+\f0\b DNSUpdate\'ca2
+\f1\b0 -Programm zu Update-Zwecken verwendet)\
+W\'8ahrend der D\'8amon l\'8auft, benutzt er zwei wichtige Dateien: 
+\f2\i /var/log/dnsupdate.log
+\f1\i0 , in der die Aktivit\'8at des D\'8amons protokolliert wird, und 
+\f2\i /var/run/DNSUpdate_key
+\f1\i0 , die den Schl\'9fssel enth\'8alt, den das Programm zur Kommunikation mit dem D\'8amon ben\'9atigt. Aus Sicherheitsgr\'9fnden k\'9annen nur Administratoren auf den Inhalt der letzteren Datei zugreifen\
+\
+
+\f0\b \ul Dateien
+\f1\b0 \ulnone \
+
+\f0\b DNSUpdate\'ca2
+\f1\b0  installiert verschiedene wichtige Dateien auf Ihrer Festplatte:\
+\'e1 
+\f2\i /Library/LaunchDaemons/org.dnsupdate.daemon.plist
+\f1\i0 : das StartupItem, das daf\'9fr sorgt, dass der D\'8amon beim Hochfahren des Rechners automatisch gestartet wird.\
+\'e1 
+\f2\i /Library/Preferences/DNSUpdate
+\f1\i0 : Die Benutzer-Einstellungen.\
+\'e1 
+\f2\i /usr/local/sbin/dnsupdate
+\f1\i0 : Der D\'8amon.\
+\'e1 /var/log/dnsupdate.log: Protokoll-Datei f\'9fr den D\'8amon.\
+\'e1 
+\f2\i /var/run/DNSUpdate_key
+\f1\i0 : Schl\'9fssel, dient zur Kommunikation zwischen D\'8amon und Programm.\
+
+\f2\i DNSUpdate
+\f1\i0 (.
+\f2\i app
+\f1\i0 ): Das eigentliche Programm.\
+\
+
+\f0\b \ul Lizenz
+\f1\b0 \ulnone \
+
+\f0\b DNSUpdate\'ca2
+\f1\b0  ist kostenlose Opensource-Software. Obwohl 
+\f0\b DNSUpdate\'ca2
+\f1\b0  nicht unter der GPL steht, w\'9frde ich es sehr begr\'9f\'a7en, alle \'80nderungen an meinem Quelltext zu sehen, und jegliche Nutzung meines Quellcodes in einem Projekt Ihrerseits setzt meine Erlaubnis voraus.\
+\
+
+\f0\b DNSUpdate\'ca2 ist 
+\f1\b0 \'a9 2000-2001 Julien Jalon (
+\f2\i jalon@julien-jalon.org
+\f1\i0 )}

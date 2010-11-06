@@ -1,0 +1,320 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf350
+{\fonttbl\f0\froman\fcharset77 Times-Bold;\f1\froman\fcharset77 Times-Roman;\f2\froman\fcharset77 Times-Italic;
+\f3\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\qc
+
+\f0\b\fs100 \cf0 DNSUpdate 2\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\fs28 \cf0 DNSUpdate 2
+\f1\b0  \'8f un client per servizi DNS dinamici quali DynDNS.org e ZoneEdit.com specifico per MacOS X. Usa la struttura Cocoa e viene lanciato all'avvio del sistema. Viene fornito insieme ad una applicazione grafica per configurare e monitorare il client.\
+\
+
+\f0\b \ul Contenuto di questo help\
+
+\f2\i\b0 \ulnone 	Configurazione veloce\
+        	Attivazione del demone (daemon) di DNSUpdate\
+	Monitoraggio di DNSUpdate\
+        	Disinstallazione di DNSUpdate\
+	Come configurare l'Interfaccia\
+	Errori Comuni\
+	Unixxxxxxxxx\
+	Files\
+	Licenza\
+
+\f1\i0 \
+Puoi trovare informazioni pi\'9d dettagliate, l'ultima versione, note sulla release e FAQ all'indirizzo internet 
+\f2\i http://www.dnsupdate.org
+\f1\i0 .\
+Oppure puoi contattare il supporto all'email 
+\f2\i support@dnsupdate.org
+\f1\i0 .\
+(Vedi Men\'9d Info)\
+
+\f2\i \
+
+\f0\i0\b \ul Configurazione veloce
+\f1\b0 \ulnone \
+Per prima cosa devi esserti registrato al servizio di DNS dinamico che desideri usare. Se non l'hai gi\'88 fatto, puoi registrarti ad uno dei siti che generalmente trovi nel men\'9d "About" del pannello di DNSUpdate. Ricordati il login (
+\f2\i es.: miologin
+\f1\i0 ) e la password (
+\f2\i es.: miapassword
+\f1\i0 ) che sceglierari al momento dell'iscrizione.\
+\
+Secondo, devi registrare almeno un host per l'utente appena creato (
+\f2\i es.: miohost.dnsalias.net
+\f1\i0 ).\
+\
+Lancia 
+\f0\b DNSUpdate 2
+\f1\b0 . 
+\f0\b DNSUpdate 2
+\f1\b0  deve essere lanciato 
+\f0\b dall'amministratore del sistema!
+\f1\b0 \
+Se necessario, l'applicazione installer\'88 il demone (daemon) nella cartella StartupItems (ti sar\'88 chiesta la password di amministaretore). La parte pi\'9d importante di 
+\f0\b DNSUpdate 2
+\f1\b0  \'8f il demone (daemon) che verr\'88 lanciato automaticamente all'avvio del sistema, 
+\f0\b non \'8f necessario che l'applicazione sia attiva 
+\f1\b0 per permettere al client il suo funzionamento, serve solamente per l'installazione, la configurazione ed il monitoraggio.\
+\
+Apri la finestra Users (File->Edit Users oppure Command-U).\
+\
+Crea un utente (Add User) con la tua login e password (
+\f2\i miologin
+\f1\i0  e 
+\f2\i miapassword
+\f1\i0 ) e seleziona il servizio (
+\f2\i ilservizio
+\f1\i0 ). L'utente apparir\'88 nella finestra user come 
+\f2\i miologin
+\f1\i0 @
+\f2\i ilservizio
+\f1\i0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 1.jpg \width8320 \height6260
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Clicca su user e crea un host (Add Host) con il nome del tuo host (
+\f2\i miohost.dnsalias.net
+\f1\i0 ). Fai attenzione perch\'8f 
+\f0\b il nome dell'host deve essere completo
+\f1\b0 , con il nome del dominio. Seleziona l'interfaccia da usare con questo host (vedi: 
+\f2\i Come configurare l'Interfaccia
+\f1\i0 ) e le opzioni per il tuo host. Per esempio, se il servizio che usi \'8f DynDNS.org, dovresti scegliere il tipo di host (dyndns per Dynamic DNS, statdns per Static DNS oppure custom per Custom DNS) e seleziona Wildcard e Mail Exchanger se desideri usarli.\
+Il nuovo host \'8f ora sotto il profilo utente nella Users Window.\
+Puoi registrare quanti host desideri con il tuo servizio (se esso lo supporta). 
+\f0\b DNSUpdate 2
+\f1\b0  supporta host multipli per ogni profilo utente. 
+\f0\b DNSUpdate 2
+\f1\b0  supporta inoltre utenti multipli.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 2.jpg \width8240 \height6300
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 Puoi ora attivare l'utente 
+\f2\i miologin
+\f1\i0  cliccando sull'Active checkbox. Normalmente, questo \'8f sufficiente. 
+\f0\b DNSUpdate 2
+\f1\b0  \'8f configurato ed in funzione. Puoi uscire dall'applicazione 
+\f0\b DNSUpdate 2
+\f1\b0  oppure usarla per monitorare l'attivit\'88 del demone (daemon), (vedi: 
+\f2\i Monitoraggio DNSUpdate
+\f1\i0 ).\
+Nella Users Window, se lo user oppure l'host vengono disattivati, probabilmente c'\'8f qualcosa che non va nella tua configurazione. Vedi: 
+\f2\i Errori Comuni
+\f1\i0 . Il corretto stato per user ed host \'8f "OK".\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Attivazione del demone (daemon) DNSUpdate
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone Puoi configurare il demone per essere attivato, disattivato all'avvio del sistema, per conservare il suo stato durante ogni riavvio o per essere attivato solo se l'applicazione 
+\f0\b DNSUpdate
+\f1\b0  viene lanciata. Apri la Preferences Window (DNSUpdate->Preferences...) e scegli la configurazione che preferisci.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Monitoraggio di DNSUpdate
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone Il demone (daemon) di 
+\f0\b DNSUpdate 2 
+\f1\b0 non ha pi\'9d bisogno dell'applicazione per funzionare. Tester\'88 l'IP ogni minuto (ogni quindici se l'Interfaccia \'8f External/External (bypassing Proxy)) ed aggiorner\'88 il database del servizio di DNS dinamico solo se necessario. Comunque, l'applicazione 
+\f0\b DNSUpdate 2
+\f1\b0  pu\'98 essere usata per monitorare l'attivit\'88 del demone (daemon). E' consigliato monitorare il demone (daemon) di tanto in tanto per controllare che sia tutto OK con la configurazione.\
+\
+Chiudi la Users Window e apri Monitor Window (Window->Open Monitor Window oppure Command-O).\
+\
+Con questa finestra, puoi controllare che il tuo IP sia registrato, l'ultima volta che \'8f stato registrato ed eventualmente se si sono verificati errori, lo Status indica gli errori (vedi: 
+\f2\i Errori Comuni
+\f1\i0 ). Se lo User \'8f inattivo, apri la Users Window per verificarne lo stato, ed eventualmente riattivare lo User.\
+\
+Puoi 
+\f0\b disattivare
+\f1\b0  un host temporaneamente (il demone (daemon) non lo aggiorner\'88) appure 
+\f0\b riattivarlo 
+\f1\b0 (se \'8f stato disattivato precedentemente, anche nell'eventualit\'88 di un errore; assicurati che l'errore sia stato corretto prima di riattivare l'host!). Puoi anche attivare o disattivare l'host dalla Users Window.\
+\
+Puoi inoltre sospendere (
+\f0\b pause)
+\f1\b0  o avviare (
+\f0\b start)
+\f1\b0  il demone (daemon) cliccando sul bottone Pause/Starts daemon. Se sospeso, il demone (daemon) non cercher\'88 di testare l'interfaccia e neanche di registrare il tuo IP.\
+\
+Puoi adattare le colonne User e Last Update per vedere le informazini complete. \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 4.jpg \width14520 \height3100
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 3.jpg \width11900 \height3020
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Se sei un utente avanzato (o desideri inviare il file all'autore), puoi visualizzare il file Daemon Log File (Tools->Open Log File oppure Command-L).\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Disintallazione DNSUpdate
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 Per disinstallare DNSUpdate (daemone (daemon) e Startup Item), usa la voce "Uninstall DNSUpdate" nel men\'9d Tools. Ti sar\'88 chiesta la password di Amministartore di sistema. L'applicazione si chiuder\'88 alla fine del processo.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Come configurare l'Interfaccia
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 Devi configurare l'interfaccia Host in base al tipo di collegamento Internet che possiedi: \
+\
+- Di base, come Default Interface sar\'88 selezionata l'interfaccia attiva definita nelle Preferenze di Rete (se l'Interfaccia viene cambiata, il demone (daemon) DNSUpdate se ne accorger\'88 e la modificher\'88 di conseguenza).\
+- Via modem interno (con la normale linea telefonica): usa Internal Modem\
+- Via cable modem attraverso la scheda di rete integrata o se sei connesso direttamente ad Internet: usa Built-in Ethernet\
+- Via scheda di rete secondaria: usa Secondary Ethernet\
+- Via DSL/ADSL con PPPoE: usa ADSL PPPoE Interface\
+- Se usi un router: usa External\
+- Se usi un router ed un proxy: usa External (bypassing Proxy)\
+- Normalmente, External (bypassing Proxy) funziona per ogni situazione. Questa \'8f la tua ultima occasione. Se non funziona con nessuna delle configurazioni sopra indicate, significa che la tua connessione non \'8f supportata, contatta l'autore del programma.\
+\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Errori Comuni
+\f1\b0 \ulnone \
+C'\'8f stato un errore nell'aggiornare il tuo host. Lo stato user/host ti mostra il problema.\
+Gli errori principali sono: \
+\
+- 
+\f2\i Bad Auth/Bad Username or Password (errore di autenticazione nome utente e/o password)
+\f1\i0 : il tuo login e/o la tua password sono errati;\
+- 
+\f2\i No such host (host inesistente)
+\f1\i0 : l'host che hai configurato non \'8f registrato con il servizio;\
+- 
+\f2\i Not yours/Doesn't belong to this User (l'host non ti appartiene)
+\f1\i0 : l'host non ti appartiene;\
+- 
+\f2\i Abuse/Blocked for Abuse (Abuso/Bloccato per abuso)
+\f1\i0 : il tuo host \'8f bloccato. Contatta il supporto tecnico del servizio;\
+- 
+\f2\i Bad domain name (nome a dominio errato)
+\f1\i0 : hai inserito il nome a dominio completo (es.: test.dyndns.org invece di "test");\
+- Gli altri sono principalmente errori critical (critici), (o di servizio o di 
+\f0\b DNSUpdate 2
+\f1\b0 ): \
+*  errori critici del servizio di DNS dinamico (Contatta il supporto del servizio o attendi qualche attimo): 
+\f2\i DNS down
+\f1\i0 , 
+\f2\i DNS Error
+\f1\i0 ;\
+*  errori non critici del servizio di DNS dinamico: 
+\f2\i No Server Answer
+\f1\i0  (Nessuna risposta dal server) (Time out... l'host pu\'98 essere temporaneamente irraggiungibile);\
+*  Tutti gli altri sono errori critici di DNSUpdate. Contatta l'autore per il supporto tecnico (
+\f2\i support@dnsupdate.org)
+\f1\i0 .\
+\
+A volte pu\'98 accadere che la tua 
+\f0\b interfaccia sia inattiva
+\f1\b0 . C'\'8f stato un problema con la tua interfaccia. Puoi aver scelto l'interfaccia (interna) sbagliata oppure, se l'interfaccia \'8f esterna, il demone (daemon) pu\'98 aver avuto dei problemi a contattare il tuo sever esterno per avere il tuo IP (temporaneamente).\
+L'interfaccia sar\'88 anche inattiva se ti disconnetti da internet.\
+Il demone (daemon) riprover\'88 automaticamente e riattiver\'88 l'Interfaccia quando i problemi si saranno risolti.\
+\
+
+\f0\b \ul Unixxxxxxxxx 
+\f1\b0 \ulnone \
+MacOS X \'8f anche un sistema Unix. Ho cercato di fare DNSUpdate il pi\'9d semplice possibile. Ho anche provato a fare di DNSUpdate un progarmma unix. Per chi fosse interessato \'8f anche possibile operare con 
+\f0\b DNSUpdate 2
+\f1\b0  attraverso il Terminal.\
+Il demone (daemon) \'8f a tutti gli effetti un programma Unix, il quale viene installato in 
+\f2\i /usr/local/sbin
+\f1\i0  e viene chiamato\'c9 dnsupdate. Puoi usarlo altres\'93 per controllare il demone (daemon). Come 
+\f0\b DNSUpdate 2
+\f1\b0 , deve essere usato dall'amministratore per il suo corretto funzionamento.\
+Questo \'8f quanto puoi fare:\
+
+\f2\i dnsupdate
+\f1\i0 : ti da un piccolo aiuto sul suo funzionamento.\
+
+\f2\i dnsupdate pause
+\f1\i0 : sospende il demone (daemon).\
+
+\f2\i dnsupdate start
+\f1\i0 : avvia il demone (daemon).\
+
+\f2\i dnsupdate quit
+\f1\i0 : termina il demone (daemon).\
+
+\f2\i dnsupdate daemon
+\f1\i0 : lancia il programma come demone (daemon) (non usarlo se non sei sicuro di quello che stai facendo!).\
+
+\f2\i dnsupdate magic
+\f1\i0 : fornisce la versione del demone (daemon) (usato solamente per aggionare l'applicazione 
+\f0\b DNSUpdate 2).
+\f1\b0 \
+Quando il demone (daemon) viene lanciato, usa due files importanti: 
+\f2\i /var/log/dnsupdate.log
+\f1\i0  il quale registra l'attivit\'88 del demone (daemon) e 
+\f2\i /var/run/DNSUpdate_key
+\f1\i0  il quale contiene la chiave per connettere il demone (daemon). Solo l'amministratore pu\'98 accedere al contenuto di quest'ultimo file. E' importante per la sicurezza del sistema.\
+\
+
+\f0\b \ul Files
+\f1\b0 \ulnone \
+
+\f0\b DNSUpdate 2
+\f1\b0  installa diversi ed importanti files nel tuo sistema:\
+
+\f2\i /Library/LaunchDaemons/org.dnsupdate.daemon.plist
+\f1\i0 : lo Startup Item usato per lanciare il demone (daemon) all'avvio del sistema.\
+
+\f2\i /Library/Preferences/DNSUpdate
+\f1\i0 : i files di configurazione utente.\
+
+\f2\i /usr/local/sbin/dnsupdate
+\f1\i0 : il demone (daemon).\
+/var/log/dnsupdate.log: il registro delle attivit\'88 del demone (daemon).\
+
+\f2\i /var/run/DNSUpdate_key
+\f1\i0 : la chiave per connettere il demone (daemon).\
+
+\f2\i DNSUpdate
+\f1\i0 (.
+\f2\i app
+\f1\i0 ): l'applicazione.\
+\
+
+\f0\b \ul Licenza
+\f1\b0 \ulnone \
+
+\f0\b DNSUpdate 2
+\f1\b0  \'8f un software free open source. Sebbene 
+\f0\b DNSUpdate 2
+\f1\b0  non sia GPL, apprezzerei molto non vedere modificazione alcuna dei miei files sorgenti, e qualsiasi uso di questo codice per qualsiasi tipo di progetto richiede la mia autorizzazione.\
+\
+
+\f0\b DNSUpdate 2 \'8f 
+\f1\b0 \'a9 2000-2001 Julien Jalon (
+\f2\i jalon@julien-jalon.org
+\f1\i0 )}

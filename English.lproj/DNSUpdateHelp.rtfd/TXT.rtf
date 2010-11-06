@@ -1,0 +1,324 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf350
+{\fonttbl\f0\froman\fcharset77 Times-Bold;\f1\froman\fcharset77 Times-Roman;\f2\froman\fcharset77 Times-Italic;
+\f3\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\qc
+
+\f0\b\fs100 \cf0 DNSUpdate 2\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\fs28 \cf0 DNSUpdate 2
+\f1\b0  is a client for dynamic DNS services like DynDNS.org and ZoneEdit.com, specific to MacOS X. It uses the Cocoa framework and is launched at boot time. It comes with a graphic application to configure and monitor the client.\
+\
+
+\f0\b \ul Content of this help\
+
+\f2\i\b0 \ulnone 	Quick Configuration\
+        	DNSUpdate daemon activation\
+	Monitoring DNSUpdate\
+        	Uninstall DNSUpdate\
+	How to configure the Interface?\
+	Common Errors\
+	Unixxxxxxxxx\
+	Files\
+	Licence\
+
+\f1\i0 \
+You can get more accurate information, last version, release notes and quick FAQ at 
+\f2\i http://www.dnsupdate.org
+\f1\i0 .\
+You can also contact the support at 
+\f2\i support@dnsupdate.org
+\f1\i0 .\
+(See About Box)\
+
+\f2\i \
+
+\f0\i0\b \ul Quick Configuration
+\f1\b0 \ulnone \
+First you have to be a registered user of the dynamic DNS service you want to use. If not, you can register at their site (you can generally found the service's URL in the "About DNSUpdate" panel). Note your login name (e.g.: 
+\f2\i mylogin
+\f1\i0 ) and your password (e.g.: 
+\f2\i mypassword
+\f1\i0 ) for your service.\
+\
+Second, you have to register at least one host for this user (e.g.: 
+\f2\i myhost.dnsalias.net
+\f1\i0 ).\
+\
+Launch the 
+\f0\b DNSUpdate 2
+\f1\b0  application. The 
+\f0\b DNSUpdate 2
+\f1\b0  application has to run 
+\f0\b as an Administrator
+\f1\b0 !\
+If necessary, the application will install the Daemon and the StartupItem (your administrator password will be required) at the right places. The most important part of 
+\f0\b DNSUpdate 2
+\f1\b0  is the daemon which is automatically launched at boot time, the application 
+\f0\b has not to run
+\f1\b0  for the client to update, the application is only for installation, configuration and monitoring purposes.\
+\
+Open the Users Window (File->Edit Users or Command-U).\
+\
+Create a user (Add User) with your login and password (
+\f2\i mylogin
+\f1\i0  and 
+\f2\i mypassword
+\f1\i0 ) and select your service (
+\f2\i theservice
+\f1\i0 ). The user will appear in the user window as 
+\f2\i mylogin
+\f1\i0 @
+\f2\i theservice
+\f1\i0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 1.jpg \width8320 \height6260
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Click on the user and create a host (Add Host) with your host (
+\f2\i myhost.dnsalias.net
+\f1\i0 ). Beware that 
+\f0\b the name of the host has to be complete
+\f1\b0 , with the domain name. Select the Interface to use for this host (see below: 
+\f2\i How to configure the Interface?
+\f1\i0 ) and the options for your host. For example, if the service you use is DynDNS.org, you should choose the host type (dyndns for Dynamic DNS, statdns for Static DNS or custom for Custom DNS) and select Wildcard and Mail Exchanger if you want to use them.\
+The new host is now under the user in the Users Window.\
+You can register many host with your service (if it supports it). 
+\f0\b DNSUpdate 2
+\f1\b0  supports multiple hosts per user. 
+\f0\b DNSUpdate 2
+\f1\b0  also supports multiple users.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 2.jpg \width8240 \height6300
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 You can now activate the user 
+\f2\i mylogin
+\f1\i0  by clicking the Active checkbox. Normally, there is nothing more to do. 
+\f0\b DNSUpdate 2
+\f1\b0  is configured and is already running. You can quit the 
+\f0\b DNSUpdate 2
+\f1\b0  application or use it to monitor the daemon activity (see 
+\f2\i Monitoring DNSUpdate
+\f1\i0 ).\
+In the Users Window, if the user or the host get automatically deactivated, there must be something wrong with your configuration. Please see 
+\f2\i Common Errors
+\f1\i0  below. The correct Status for users and hosts is "Ok".\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 DNSUpdate daemon activation
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone You can configure the daemon to be activated, desactivated at boot time, to keep its state across reboot or to be activated only if the 
+\f0\b DNSUpdate
+\f1\b0  application is launched. Open the preferences window (DNSUpdate->Preferences...) and choose your activation method.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Monitoring DNSUpdate
+\f2\i\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\i0 \cf0 \ulnone The 
+\f0\b DNSUpdate 2 
+\f1\b0 daemon does not need the application anymore to function. It will test the IP every minute (every 15 minutes if the interface is External/External (bypassing Proxy)) and update the dynamic DNS service's database only if needed. However, the 
+\f0\b DNSUpdate 2
+\f1\b0  application can be used to monitor the daemon activity. It is recommended to monitor the daemon during some (short) time to control that everything is ok with your configuration.\
+\
+Close the Users Window and open the Monitor Window (Window->Open Monitor Window or Command-O).\
+\
+With this window, you can control that your IP is registered, the last time it was registered and eventually, if something went wrong, the Status indicates the error (see 
+\f2\i Common Errors
+\f1\i0  below). If the User is inactive, open the Users Window to check the user status, and eventually reactivate the user.\
+\
+You can 
+\f0\b deactivate
+\f1\b0  a host temporary (the daemon will not update it) or 
+\f0\b reactivate
+\f1\b0  it (if it was deactivated earlier on purpose or because of an error. Be sure that the error is corrected before reactivating the host!). You can also activate or deactivate the hosts with the Users Window.\
+\
+You can also 
+\f0\b pause
+\f1\b0  or 
+\f0\b start
+\f1\b0  the daemon by clicking on the button Pause/Starts daemon. When paused, the daemon will not try to test the interface nor to register your IP.\
+\
+The information in the User and Last Update columns is adapted to the columns size.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 4.jpg \width14520 \height3100
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f3\fs24 \cf0 {{\NeXTGraphic Picture 3.jpg \width11900 \height3020
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs28 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+If you're an advanced user (or if you will to send it to the author), you can also open the Daemon Log File (Tools->Open Log File or Command-L).\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Uninstall DNSUpdate
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 To uninstall DNSUpdate (daemon and Startup Item), use the "Uninstall DNSUpdate" item in the Tools menu. You will have to provide an Administrator password. The application will quit after the process.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 How to configure the Inferface?
+\f1\b0 \ulnone \
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+\cf0 You have to configure the Host interface depending on how you are connected to the Internet: \
+\
+- Basically, the Default Interface will select the active interface defined in the Network Preferences (if this interface changes, the DNSUpdate daemon will note it and change accordingly).\
+- With your internal modem (with your normal phone line): use Internal Modem\
+- With a cable modem via your built-in ethernet card or you're directly connected to the Internet: use Built-in Ethernet\
+- With a secondary ethernet card: use Secondary Ethernet\
+- Via DSL/ADSL with PPPoE: use ADSL PPPoE Interface\
+- If you're behind a router: use External\
+- If you're behind a router and a proxy: use External (bypassing Proxy)\
+- Normally, External (bypassing Proxy) will always work. That's your last chance. If nothing works, then your connection is not supported, contact the author.\
+\
+\pard\tx0\tx1120\tx2240\tx3360\tx4480\tx5600\tx6720\tx7840\tx8960\tx10080\tx11200\tx12320\tx13440\tx14560\tx15680\tx16800\tx17920\tx19040\tx20160\tx21280\tx22400\tx23520\tx24640\tx25760\tx26880\tx28000\tx29120\tx30240\tx31360\tx32480\tx33600\tx34720\ql\qnatural
+
+\f0\b \cf0 \ul \ulc0 Common Errors
+\f1\b0 \ulnone \
+There was an error while updating your host. The user/host status shows you the problem.\
+The main errors are: \
+\
+- 
+\f2\i Bad Auth/Bad Username or Password
+\f1\i0 : your login or password is wrong;\
+- 
+\f2\i No such host
+\f1\i0 : the host you entered is not registered by the service;\
+- 
+\f2\i Not yours/Doesn't belong to this User
+\f1\i0 : the host is not yours;\
+- 
+\f2\i Abuse/Blocked for Abuse
+\f1\i0 : your host is blocked. Contact service's support;\
+- 
+\f2\i Bad domain name
+\f1\i0 : you have to provide the full host name (e.g.: "test.dyndns.org" and not "test")\
+- The other ones are mainly critical errors (either for the service or 
+\f0\b DNSUpdate 2
+\f1\b0 ): \
+*  dynamic DNS service critical errors (Contact service's support or wait some time): 
+\f2\i DNS down
+\f1\i0 , 
+\f2\i DNS Error
+\f1\i0 .\
+*  dynamic DNS non critical error: 
+\f2\i No Server Answer
+\f1\i0  (Time out... maybe the host is temporary unreachable)\
+*  The other ones are DNSUpdate critical errors. Contact the author for support (
+\f2\i support@dnsupdate.org)
+\f1\i0 .\
+\
+Sometime, maybe, your 
+\f0\b Interface
+\f1\b0  
+\f0\b will be
+\f1\b0  
+\f0\b inactive
+\f1\b0 . There was a problem with your Interface. Maybe you've choosen the wrong (internal) one or, if the interface is external, the daemon had some problems contacting the external server to get your IP (maybe temporarly).\
+The Interface will also be inactive if you deconnect from the Internet.\
+The daemon will retry automatically and reactivate the Interface when the problems are gone.\
+\
+
+\f0\b \ul Unixxxxxxxxx 
+\f1\b0 \ulnone \
+MacOS X is also a Unix system. I tried to make DNSUpdate as easy to use as possible. I also tried to make DNSUpdate a unix program. For those who are interested, you can do some thing with the 
+\f0\b DNSUpdate 2
+\f1\b0  within the Terminal.\
+The daemon is, in fact, a Unix program which is installed in 
+\f2\i /usr/local/sbin
+\f1\i0  and is called\'c9 dnsupdate. You can use it to control the daemon. Like the 
+\f0\b DNSUpdate 2
+\f1\b0  application, it has to run as an administrator to correctly function.\
+Here is what you can do with it:\
+
+\f2\i dnsupdate
+\f1\i0 : alone gives you a little help for this tool.\
+
+\f2\i dnsupdate pause
+\f1\i0 : pauses the daemon.\
+
+\f2\i dnsupdate start
+\f1\i0 : starts the daemon.\
+
+\f2\i dnsupdate quit
+\f1\i0 : quits the daemon.\
+
+\f2\i dnsupdate daemon
+\f1\i0 : launches as a daemon (do not use this unless you know what you are doing!).\
+
+\f2\i dnsupdate magic
+\f1\i0 : gives the daemon version (only used for the 
+\f0\b DNSUpdate 2
+\f1\b0  application for updating purpose)\
+When the daemon is launched, it uses two important files: 
+\f2\i /var/log/dnsupdate.log
+\f1\i0  which log exactly the daemon activity and 
+\f2\i /var/run/DNSUpdate_key
+\f1\i0  which contains the key to connect to the daemon. Only administrators can access to the content of this last file. It is important for the security of the system.\
+\
+
+\f0\b \ul Files
+\f1\b0 \ulnone \
+
+\f0\b DNSUpdate 2
+\f1\b0  installs different important files on your hard drive:\
+
+\f2\i /Library/LaunchDaemons/org.dnsupdate.daemon.plist
+\f1\i0 : the Startup Item used to launch the daemon at boot time.\
+
+\f2\i /Library/Preferences/DNSUpdate
+\f1\i0 : the users configuration files.\
+
+\f2\i /usr/local/sbin/dnsupdate
+\f1\i0 : the daemon itself.\
+/var/log/dnsupdate.log: the daemon log file.\
+
+\f2\i /var/run/DNSUpdate_key
+\f1\i0 : the key to connect to the daemon.\
+
+\f2\i DNSUpdate
+\f1\i0 (.
+\f2\i app
+\f1\i0 ): the application itself.\
+\
+
+\f0\b \ul Licence
+\f1\b0 \ulnone \
+
+\f0\b DNSUpdate 2
+\f1\b0  is a free open source software. Although 
+\f0\b DNSUpdate 2
+\f1\b0  is not under GPL, I'd really appreciate to see any modification to my sources, and any use of this code in any type of project requires my authorization.\
+\
+
+\f0\b DNSUpdate 2 is 
+\f1\b0 \'a9 2000-2001 Julien Jalon (
+\f2\i jalon@julien-jalon.org
+\f1\i0 )}

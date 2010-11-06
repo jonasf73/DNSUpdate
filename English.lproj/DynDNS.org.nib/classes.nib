@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {goToDynDNS = id; }; 
+            CLASS = DUDynDNSInterface; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                hostDynDNSBackMX = id; 
+                hostDynDNSMXField = id; 
+                hostDynDNSType = id; 
+                hostDynDNSWildCard = id; 
+            }; 
+            SUPERCLASS = DUServiceInterface; 
+        }, 
+        {
+            CLASS = DUServiceInterface; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {duServiceHostView = NSView; duServiceUserView = NSView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

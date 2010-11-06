@@ -1,0 +1,90 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                openHelp = id; 
+                openLogFile = id; 
+                openPreferencesWindow = id; 
+                pauseDaemon = id; 
+                setStartOption = id; 
+                supportContact = id; 
+                supportLater = id; 
+                supportOpen = id; 
+                supportPay = id; 
+                uninstallDNSUpdate = id; 
+            }; 
+            CLASS = DUAppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                helpTextView = id; 
+                helpWindow = id; 
+                launchPanel = id; 
+                launchProgressIndicator = id; 
+                monitorController = id; 
+                monitorWindow = id; 
+                pauseMenuItem = id; 
+                preferencesWindow = id; 
+                startOptionRadioButtons = id; 
+                supportWindow = id; 
+                usersController = id; 
+                usersWindow = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {openMonitorWindow = id; pauseDaemon = id; }; 
+            CLASS = DUMonitorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                activeColumn = id; 
+                hostnameColumn = id; 
+                ipColumn = id; 
+                lastUpdateColumn = id; 
+                monitorWindow = id; 
+                pauseButton = id; 
+                statusColumn = id; 
+                statusField = id; 
+                tableView = id; 
+                userColumn = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addHost = id; 
+                addUser = id; 
+                editAction = id; 
+                hostCancel = id; 
+                hostSave = id; 
+                openUsersWindow = id; 
+                removeAction = id; 
+                userCancel = id; 
+                userChangeService = id; 
+                userSave = id; 
+            }; 
+            CLASS = DUUsersController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                activeColumn = id; 
+                hostEditBox = id; 
+                hostEditInterface = id; 
+                hostEditName = id; 
+                hostEditSaveButton = id; 
+                hostEditWindow = id; 
+                nameColumn = id; 
+                statusColumn = id; 
+                userEditBox = id; 
+                userEditName = id; 
+                userEditPassword = id; 
+                userEditSaveButton = id; 
+                userEditService = id; 
+                userEditWindow = id; 
+                usersOutlineView = id; 
+                usersWindow = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

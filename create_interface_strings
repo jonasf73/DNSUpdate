@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd English.lproj
+nibtool -L MainMenu.nib > MainMenu.strings

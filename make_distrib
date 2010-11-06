@@ -1,0 +1,9 @@
+#!/bin/sh
+
+rm -rf build
+xcodebuild install ARCHS="i386 ppc"
+rm -rf build
+cd ..
+tar cvzf ~/Documents/DNSUpdate2s.tar.gz DNSUpdate2
+open /tmp/DNSUpdate2.dst
+open ~/Documents
