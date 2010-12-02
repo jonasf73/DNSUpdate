@@ -184,9 +184,9 @@
 		F208FF2E09F2405900C8C3C4 /* DUMachBootstrapServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUMachBootstrapServer.h; sourceTree = "<group>"; };
 		F208FF2F09F2405900C8C3C4 /* DUMachBootstrapServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUMachBootstrapServer.m; sourceTree = "<group>"; };
 		F2E55BD5087B371200BE3C85 /* dnsupdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dnsupdate; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E55C11087B371200BE3C85 /* Info-DNSUpdate_GUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-DNSUpdate_GUI.plist"; sourceTree = "<group>"; };
+		F2E55C11087B371200BE3C85 /* Info-DNSUpdate_GUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-DNSUpdate_GUI.plist"; sourceTree = "<group>"; };
 		F2E55C12087B371200BE3C85 /* DNSUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNSUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E70A5109F268340025A912 /* org.dnsupdate.daemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = org.dnsupdate.daemon.plist; sourceTree = "<group>"; };
+		F2E70A5109F268340025A912 /* org.dnsupdate.daemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = org.dnsupdate.daemon.plist; sourceTree = "<group>"; };
 		F50593010219537301844B0F /* DUGenericHTTPUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DUGenericHTTPUpdater.m; sourceTree = "<group>"; };
 		F50593020219537301844B0F /* DUGenericHTTPUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUGenericHTTPUpdater.h; sourceTree = "<group>"; };
 		F5059305021964A301844B0F /* DUZoneEditUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DUZoneEditUpdater.h; sourceTree = "<group>"; };
@@ -574,6 +574,7 @@
 			isa = PBXProject;
 			buildConfigurationList = F208FF2109F23E3400C8C3C4 /* Build configuration list for PBXProject "DNSUpdate2" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -815,7 +816,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -888,7 +888,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "Info-DNSUpdate_GUI.plist";
 				INSTALL_PATH = /;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -962,7 +961,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -1015,6 +1013,7 @@
 		F208FF2209F23E3400C8C3C4 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = 4.0;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Development;
@@ -1027,6 +1026,7 @@
 					i386,
 				);
 				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_VERSION = 4.0;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
@@ -1035,6 +1035,7 @@
 		F208FF2409F23E3400C8C3C4 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = 4.0;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Default;
